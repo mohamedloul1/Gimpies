@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="0"/>
+  <LastIsn val="8"/>
 
   <LastIsnFolder val="0"/>
 
@@ -17,6 +17,1033 @@
 <DataRepositoryProperties/>
  <DataSourceRepository>
   <DataObjects>
-  </DataObjects>
+ 
+<DataObject PhysicalName="Employee" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="1" name="Employee">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="2"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="EmployeeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="EmployeeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EmployeeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="UserName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="UserName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="UserName" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Password">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Password"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Password" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Role">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="12"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Role"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Role" PIC_U="12" Size="12" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="Active">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Active"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Active" PIC_U="5" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Emp_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Emp_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Emp_UserName">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Emp_UserName"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="BRAND" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" name="Brand">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="2"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="BrandID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="BrandID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="BrandID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="25"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Name"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Name" PIC_U="25" Size="25" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Brand_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Brand_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Brand_Name">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Brand"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="25"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Shoe_Type" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="3" name="Shoe_Type">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="2"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="TypeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="TypeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="TypeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="BrandID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="BrandID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="BrandID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="25"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Name"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Name" PIC_U="25" Size="25" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Type_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Type_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Type_Brand_Name">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Type_Brand_Name"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="25"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Color" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="4" name="Color">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="2"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="ColorID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ColorID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ColorID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+        <Picture id="157" valUnicode="9"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="9"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Name"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Name" PIC_U="9" Size="9" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Color_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Color_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Color_Name">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Color_Name"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="9"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Size" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="5" name="Size">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="2"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="SizeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="SizeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="SizeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Value">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Name"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="2"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Name" PIC_U="2" Size="2" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Size_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Size_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Size_Value">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Size_Value"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="2"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Shoe" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="6" name="Shoe">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="3"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="ShoeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ShoeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ShoeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="BrandID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="BrandID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="BrandID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="TypeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="TypeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="TypeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="SizeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="SizeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="SizeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="ColorID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ColorID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ColorID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Quantity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Quantity"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="12"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Quantity" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Price">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="10.2"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Price"/>
+        <_Dec id="181" val="2"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Price" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Shoe_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Shoe_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Shoe_Combo">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Shoe_Unique"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="4"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="5"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="3" name="Shoe_Brand">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Shoe_Brand"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Purchase" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="7" name="Purchase">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="3"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="PurchaseID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="PurchaseID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="PurchaseID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="EmployeeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="EmployeeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EmployeeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ShoeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ShoeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ShoeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Quantity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
+        <Picture id="157" valUnicode="9"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Quantity"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="9"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Quantity" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="TimeStamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" id="1"/>
+        <StoredAs id="173" val="24"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="TimeStamp"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="TimeStamp" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Purchase_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Purchase_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Purchase_Emp">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Purchase_EMP"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="3" name="Purchase_Shoe">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Purchase_Shoe"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="Sale" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="8" name="Sale">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-1"/>
+
+  <IndexesLastIsn val="3"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="SaleID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="SaleID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="SaleID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="EmployeeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="EmployeeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EmployeeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ShoeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ShoeID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ShoeID" PIC_U="9" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Quantity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
+        <Picture id="157" valUnicode="12"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Quantity"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="12"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Quantity" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" id="1"/>
+        <StoredAs id="173" val="24"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Timestamp"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Timestamp" PIC_U="HH:MM:SS" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Total_Price">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="10.2"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Total_Price"/>
+        <_Dec id="181" val="2"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Total_Price" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="Sale_PK">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Sale_PK"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="Y"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="2" name="Sale_Emp">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Sale_Emp"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="3" name="Sale_Shoe">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="Sale_Shoe"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject>  </DataObjects>
  </DataSourceRepository>
   </Application>
