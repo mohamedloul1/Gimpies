@@ -1,0 +1,64 @@
+Table Employee {
+  EmployeeID int [pk, increment]
+  Username varchar [unique, not null] // login name
+  Password varchar
+  Role varchar // "Purchaser", "Sales", "Manager"
+  Active boolean
+}
+
+Table Brand {
+  BrandID int [pk, increment]
+  Name varchar [unique, not null]
+}
+
+Table ShoeType {
+  TypeID int [pk, increment]
+  BrandID int [ref: > Brand.BrandID]
+  Name varchar [not null]
+
+  indexes {
+    (Name, BrandID) [unique]
+  }
+}
+
+Table Size {
+  SizeID int [pk, increment]
+  Value int [unique, not null]
+}
+
+Table Color {
+  ColorID int [pk, increment]
+  Name varchar [unique, not null]
+}
+
+Table Shoe {
+  ShoeID int [pk, increment]
+  BrandID int [ref: > Brand.BrandID]
+  TypeID int [ref: > ShoeType.TypeID]
+  SizeID int [ref: > Size.SizeID]
+  ColorID int [ref: > Color.ColorID]
+  Quantity int
+  Price decimal(10,2)
+
+  indexes {
+    (BrandID, TypeID, SizeID, ColorID) [unique]
+  }
+}
+
+Table Purchase {
+  PurchaseID int [pk, increment]
+  EmployeeID int [ref: > Employee.EmployeeID]
+  ShoeID int [ref: > Shoe.ShoeID]
+  Quantity int
+  Timestamp datetime
+
+}
+
+Table Sale {
+  SaleID int [pk, increment]
+  EmployeeID int [ref: > Employee.EmployeeID]
+  ShoeID int [ref: > Shoe.ShoeID]
+  Quantity int
+  Timestamp datetime
+  TotalPrice decimal(10,2)
+}
