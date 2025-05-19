@@ -14,6 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Browse - Employee" ISN_2="1" LastIsn="1" id="33554452">
+          <Public val="R"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -27,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739390" _time="53979" date="19/05/2025" time="14:59:39"/>
+          <LastModified _date="739390" _time="54050" date="19/05/2025" time="15:00:50"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -189,7 +190,6 @@
         <TaskForms>
           <FormEntry _last_isn="11" _last_test_id="11" id="1">
             <PropertyList model="FORM_GUI0">
-              <Model id="1"/>
               <Width id="23" val="535"/>
               <Height id="24" val="195"/>
               <_Comment id="218"/>
@@ -222,6 +222,7 @@
                 <Data FieldID="33554433" id="43"/>
                 <ControlName id="46" val="EmployeeID"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="1"/>
                 <Border id="452"/>
               </PropertyList>
@@ -240,6 +241,7 @@
                 <Data FieldID="33554434" id="43"/>
                 <ControlName id="46" val="UserName"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="2"/>
                 <Border id="452"/>
               </PropertyList>
@@ -258,6 +260,7 @@
                 <Data FieldID="33554435" id="43"/>
                 <ControlName id="46" val="Password"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="3"/>
                 <Border id="452"/>
               </PropertyList>
@@ -276,6 +279,7 @@
                 <Data FieldID="33554436" id="43"/>
                 <ControlName id="46" val="Role"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="4"/>
                 <Border id="452"/>
               </PropertyList>
@@ -294,6 +298,7 @@
                 <Data FieldID="33554437" id="43"/>
                 <ControlName id="46" val="Active"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="5"/>
                 <Border id="452"/>
               </PropertyList>
