@@ -27,7 +27,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739390" _time="35371" date="19/05/2025" time="09:49:31"/>
+          <LastModified _date="739390" _time="35500" date="19/05/2025" time="09:51:40"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -47,7 +47,6 @@
             <Format val="L"/>
             <Media val="S"/>
             <Access val="R"/>
-            <Copies val="1"/>
             <Orientation val="P"/>
             <PrintPreview val="N"/>
             <PDF val="N"/>
@@ -270,6 +269,7 @@
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="EmployeeID"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="1"/>
                 <Border id="452"/>
               </PropertyList>
@@ -288,6 +288,7 @@
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="UserName"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="2"/>
                 <Border id="452"/>
               </PropertyList>
@@ -306,6 +307,7 @@
                 <Data FieldID="3" id="43"/>
                 <ControlName id="46" val="Password"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="3"/>
                 <Border id="452"/>
               </PropertyList>
@@ -324,6 +326,7 @@
                 <Data FieldID="4" id="43"/>
                 <ControlName id="46" val="Role"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="4"/>
                 <Border id="452"/>
               </PropertyList>
@@ -342,6 +345,7 @@
                 <Data FieldID="5" id="43"/>
                 <ControlName id="46" val="Active"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="5"/>
                 <Border id="452"/>
               </PropertyList>
@@ -388,7 +392,6 @@
         <TaskForms>
           <FormEntry CLSS="1" _last_isn="6" _last_test_id="6" id="2">
             <PropertyList model="FORM_TEXT">
-              <Model id="1"/>
               <Width id="23" val="85"/>
               <Height id="24" val="1"/>
               <_Comment id="218"/>
@@ -466,7 +469,7 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="2">
-            <ExpSyntax val="'Employee.TXT'"/>
+            <ExpSyntax val="Translate('%WorkingDir%')&amp;'ImportData\Employee.TXT'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

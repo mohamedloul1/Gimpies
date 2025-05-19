@@ -26,9 +26,9 @@
           <Interactive val="Y"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739390" _time="33560" date="19/05/2025" time="09:19:20"/>
+          <LastModified _date="739390" _time="33665" date="19/05/2025" time="09:21:05"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -54,7 +54,7 @@
           <ForceRecordDelete DEL="N"/>
           <EndTaskCondition val="N"/>
           <EvaluateEndCondition val="B"/>
-          <InitialMode val="E"/>
+          <InitialMode val="M"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
           <VarRange/>
@@ -191,7 +191,6 @@
         <TaskForms>
           <FormEntry _last_isn="11" _last_test_id="11" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
-              <Model id="1"/>
               <Width id="23" val="545"/>
               <Height id="24" val="195"/>
               <_Comment id="218"/>

@@ -1,0 +1,4 @@
+        1 testUserName              TestPassword                   test         False
+        2 Verkoop                   Gimpies_Verkoop                Sales        False
+        3 Inkoop                    Gimpies_Inkoop                 Purchaser    True
+        4 Admin                     Gimpies_Admin                  Admin        True         

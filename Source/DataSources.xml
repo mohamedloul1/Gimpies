@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="8"/>
+  <LastIsn val="9"/>
 
   <LastIsnFolder val="0"/>
 
@@ -18,7 +18,7 @@
  <DataSourceRepository>
   <DataObjects>
  
-<DataObject PhysicalName="Employee" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="1" name="Employee">
+<DataObject PhysicalName="Employee" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="1" name="Employee">
 
   <Encrypt val="N"/>
 
@@ -36,7 +36,7 @@
 
   <Position val="D"/>
 
-  <PositionIndex val="-1"/>
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="2"/>
 
@@ -56,14 +56,14 @@
     </Column>
     <Column id="2" name="UserName">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" id="1"/>
-        <Picture id="157"/>
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+        <Picture id="157" valUnicode="25"/>
         <StoredAs id="173" val="3"/>
-        <Size id="174"/>
+        <Size id="174" val="25"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="UserName"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="UserName" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="UserName" PIC_U="25" Size="25" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="3" name="Password">
@@ -135,6 +135,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
+          <Size val="25"/>
           <Column val="2"/>
           <Order val="A"/>
         </Segment>
@@ -147,7 +148,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="BRAND" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" name="Brand">
+<DataObject PhysicalName="BRAND" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="2" name="Brand">
 
   <Encrypt val="N"/>
 
@@ -240,7 +241,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Shoe_Type" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="3" name="Shoe_Type">
+<DataObject PhysicalName="Shoe_Type" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="3" name="Shoe_Type">
 
   <Encrypt val="N"/>
 
@@ -349,7 +350,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Color" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="4" name="Color">
+<DataObject PhysicalName="Color" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="4" name="Color">
 
   <Encrypt val="N"/>
 
@@ -443,7 +444,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Size" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="5" name="Size">
+<DataObject PhysicalName="Size" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="5" name="Size">
 
   <Encrypt val="N"/>
 
@@ -541,7 +542,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Shoe" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="6" name="Shoe">
+<DataObject PhysicalName="Shoe" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="6" name="Shoe">
 
   <Encrypt val="N"/>
 
@@ -731,7 +732,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Purchase" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="7" name="Purchase">
+<DataObject PhysicalName="Purchase" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="7" name="Purchase">
 
   <Encrypt val="N"/>
 
@@ -880,7 +881,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Sale" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="8" name="Sale">
+<DataObject PhysicalName="Sale" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="8" name="Sale">
 
   <Encrypt val="N"/>
 
@@ -1039,6 +1040,78 @@
       </Segments>
     </Index>
   </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="test" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="9" name="test">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="-2"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="test">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="test"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="test" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="numer">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="numer"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="numer" PIC_U="10" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="naam">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="naam"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="naam" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
 
   <ForeignKeys/>
 

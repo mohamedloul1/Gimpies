@@ -27,7 +27,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739390" _time="31083" date="19/05/2025" time="08:38:03"/>
+          <LastModified _date="739390" _time="32643" date="19/05/2025" time="09:04:03"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -41,13 +41,12 @@
           </DB>
           <IO id="1">
             <Description val="Import - Brand"/>
-            <IOExpression val="2"/>
+            <IOExpression val="5"/>
             <OpenPrintDialog val="N"/>
             <PaperSize val="68"/>
             <Format val="L"/>
             <Media val="S"/>
             <Access val="R"/>
-            <Copies val="1"/>
             <Orientation val="P"/>
             <PrintPreview val="N"/>
             <PDF val="N"/>
@@ -187,7 +186,7 @@
                     <FormEntryIndex val="2"/>
                   </FormEntryInfo>
                   <DelimiterChar val="32"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="2"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </FormIO>
@@ -231,6 +230,7 @@
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="BrandID"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="1"/>
                 <Border id="452"/>
               </PropertyList>
@@ -249,6 +249,7 @@
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="Name"/>
                 <Style id="63" val="1"/>
+                <_Orientation id="143"/>
                 <TabOrder id="314" val="2"/>
                 <Border id="452"/>
               </PropertyList>
@@ -274,7 +275,6 @@
         <TaskForms>
           <FormEntry CLSS="1" _last_isn="3" _last_test_id="3" id="2">
             <PropertyList model="FORM_TEXT">
-              <Model id="1"/>
               <Width id="23" val="35"/>
               <Height id="24" val="1"/>
               <_Comment id="218"/>
@@ -313,7 +313,15 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="2">
-            <ExpSyntax val="'BRAND.TXT'"/>
+            <ExpSyntax val="'%WorkingDir/ImportData/BRAND.txt'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="Translate('%WorkingDir%')&amp;'ImportData\BRAND.TXT'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4">
+            <ExpSyntax val=""/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
