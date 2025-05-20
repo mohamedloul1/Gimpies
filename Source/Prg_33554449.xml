@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Login" ISN_2="1" LastIsn="2" id="33554449">
+        <Header Description="Login" ISN_2="1" LastIsn="6" id="33554449">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739390" _time="58983" date="19/05/2025" time="16:23:03"/>
+          <LastModified _date="739391" _time="32393" date="20/05/2025" time="08:59:53"/>
         </Header>
         <ItemIsn val="22"/>
         <Resource>
@@ -322,6 +322,14 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="33554539" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Je account is niet actief" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="33554442"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
                 <BLOCK EndBlock="33554464" EndBlockSegment="33554469" FlowIsn="33554463" Type="I">
                   <Condition Exp="33554434"/>
                   <Modifier val="B"/>
@@ -330,32 +338,48 @@
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="33554521">
-                  <OperationType val="P"/>
+                  <OperationType val="T"/>
                   <Event>
                     <EventType val="N"/>
                   </Event>
-                  <TaskID comp="-1" obj="33554451"/>
+                  <TaskID comp="-1" obj="33554435"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition Exp="33554439"/>
+                  <Condition Exp="33554440"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="33554527">
-                  <OperationType val="P"/>
+                  <OperationType val="T"/>
                   <Event>
                     <EventType val="N"/>
                   </Event>
-                  <TaskID comp="-1" obj="33554451"/>
+                  <TaskID comp="-1" obj="33554437"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition Exp="33554440"/>
+                  <Condition Exp="33554441"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="33554533">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="33554438"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition Exp="33554439"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -535,6 +559,10 @@
             <ExpSyntax val="Trim(Lower({0,33554438} ))&lt;> '' AND Trim(Lower({0,33554439})) = Trim(Lower({0,33554451}))"/>
             <ExpAttribute val="B"/>
           </Expression>
+          <Expression id="33554442">
+            <ExpSyntax val="{0,33554453}= 'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
           <Expression id="33554435">
             <ExpSyntax val="{0,33554447} + 1"/>
             <ExpAttribute val="N"/>
@@ -556,11 +584,11 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="33554440">
-            <ExpSyntax val="{0,33554438} = 'verkoop'"/>
+            <ExpSyntax val="{0,33554452} = 'sales' AND {0,33554453} = 'TRUE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="33554441">
-            <ExpSyntax val="{0,33554452} = 'verkoop'"/>
+            <ExpSyntax val="{0,33554452} = 'purchaser' AND {0,33554453} = 'TRUE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
@@ -570,7 +598,7 @@
           </Event>
         </EVNT>
         <Task MainProgram="N">
-          <Header ISEMPTY_TSK="1" ISN_2="33554434" id="33554449">
+          <Header Description="Sales" ISN_2="33554435" LastIsn="6" id="33554449">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -582,9 +610,9 @@
             <TaskType val="C"/>
             <Interactive val="Y"/>
             <External val="N"/>
-            <FormType val="N"/>
+            <FormType val="M"/>
             <DotNetObjectExists val="N"/>
-            <LastModified date="00/00/0000" time="00:00:00"/>
+            <LastModified _date="739391" _time="29810" date="20/05/2025" time="08:16:50"/>
           </Header>
           <Resource>
             <Columns/>
@@ -593,7 +621,7 @@
             <Key>
               <Mode val="N"/>
             </Key>
-            <DB/>
+            <DB comp="-1"/>
             <Sort>
               <CLS val="A"/>
             </Sort>
@@ -673,7 +701,225 @@
             <FormEntry id="1">
               <PropertyList model="FORM_RICH_CLIENT">
                 <_Comment id="218"/>
-                <FormName id="311"/>
+                <FormName id="311" valUnicode="Sales"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="Purchaser" ISN_2="33554437" LastIsn="6" id="33554449">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="C"/>
+            <Interactive val="Y"/>
+            <External val="N"/>
+            <FormType val="M"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="739391" _time="29839" date="20/05/2025" time="08:17:19"/>
+          </Header>
+          <Resource>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="N"/>
+            <EvaluateEndCondition val="B"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="R"/>
+              <LockingStrategy val="M"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="D"/>
+              <TransactionBegin val="P"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="Y"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="Y"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="N"/>
+              <TabbingCycle val="R"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="Y"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="33554433" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="33554433" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="1">
+              <PropertyList model="FORM_RICH_CLIENT">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Purchaser"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="Manager" ISN_2="33554438" LastIsn="6" id="33554449">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="C"/>
+            <Interactive val="Y"/>
+            <External val="N"/>
+            <FormType val="M"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="739391" _time="29951" date="20/05/2025" time="08:19:11"/>
+          </Header>
+          <Resource>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="N"/>
+            <EvaluateEndCondition val="B"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="R"/>
+              <LockingStrategy val="M"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="D"/>
+              <TransactionBegin val="P"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="Y"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="Y"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="N"/>
+              <TabbingCycle val="R"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="Y"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="33554433" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="33554433" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="1">
+              <PropertyList model="FORM_RICH_CLIENT">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Manager"/>
               </PropertyList>
             </FormEntry>
           </TaskForms>
