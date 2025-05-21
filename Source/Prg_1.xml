@@ -28,10 +28,38 @@
           <RunProjectAs val="O"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739387" _time="47470" date="16/05/2025" time="13:11:10"/>
+          <LastModified _date="739391" _time="51943" date="20/05/2025" time="14:25:43"/>
         </Header>
+        <ItemIsn val="3"/>
         <Resource>
-          <Columns/>
+          <Columns>
+            <Column id="67108865" name="G_UserName">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+                <StoredAs id="173" val="1"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+            <Column id="67108866" name="G_UserID">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+            <Column id="67108867" name="G_Role">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+                <StoredAs id="173" val="1"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -101,6 +129,47 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="67108865" FlowIsn="67108865" id="67108865">
+                  <Column val="67108865"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108866" FlowIsn="67108866" id="67108866">
+                  <Column val="67108866"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108867" FlowIsn="67108867" id="67108867">
+                  <Column val="67108867"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
@@ -123,6 +192,20 @@
             </PropertyList>
           </FormEntry>
         </TaskForms>
+        <Expressions>
+          <Expression id="67108865">
+            <ExpSyntax val="{0,67108865} &lt;> ''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108866">
+            <ExpSyntax val="'Welkom' &amp; {0,67108865} &amp; {0,67108867}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108867">
+            <ExpSyntax val="'Geen geldige login gevonden. Applicatie sluit.'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
       </Task>
     </Programs>
   </ProgramsRepository>

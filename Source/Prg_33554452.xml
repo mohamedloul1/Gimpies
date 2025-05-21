@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Browse - Employee" ISN_2="1" LastIsn="1" id="33554452">
-          <Public val="R"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -28,7 +27,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739390" _time="54050" date="19/05/2025" time="15:00:50"/>
+          <LastModified _date="739391" _time="43539" date="20/05/2025" time="12:05:39"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>

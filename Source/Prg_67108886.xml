@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Rich Client - Shoe" ISN_2="1" LastIsn="1" id="67108886">
+        <Header Description="Stock Viewer" ISN_2="1" LastIsn="1" id="67108886">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -26,12 +26,44 @@
           <Interactive val="Y"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739391" _time="37496" date="20/05/2025" time="10:24:56"/>
+          <LastModified _date="739391" _time="42679" date="20/05/2025" time="11:51:19"/>
         </Header>
-        <ItemIsn val="7"/>
+        <ItemIsn val="15"/>
         <Resource>
+          <DB id="67108866">
+            <DataObject comp="-1" obj="2"/>
+            <Access val="R"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="Y"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
+          <DB id="67108868">
+            <DataObject comp="-1" obj="3"/>
+            <Access val="R"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="Y"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
+          <DB id="67108871">
+            <DataObject comp="-1" obj="4"/>
+            <Access val="R"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="Y"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
+          <DB id="67108869">
+            <DataObject comp="-1" obj="5"/>
+            <Access val="R"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="Y"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
           <DB id="67108865">
             <DataObject comp="-1" obj="6"/>
             <Access val="W"/>
@@ -126,7 +158,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="2"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -139,7 +171,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <INT_RCMP_INFO>
+                    <v>67108881</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -152,7 +186,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <INT_RCMP_INFO>
+                    <v>67108886</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -165,7 +201,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <INT_RCMP_INFO>
+                    <v>67108890</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -178,7 +216,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <INT_RCMP_INFO>
+                    <v>67108895</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -191,7 +231,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="7"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -204,47 +244,251 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108881" Key="1" Mode="R" SortType="67108882" VIEW="8" VIEWS="2">
+                  <DB comp="-1" obj="2"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108872" FlowIsn="67108883" id="67108872">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="67108865" MIN="67108865"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108873" FlowIsn="67108884" id="67108873">
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="11"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="67108882"/>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108886" Key="1" Mode="R" SortType="67108887" VIEW="10" VIEWS="2">
+                  <DB comp="-1" obj="3"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108874" FlowIsn="67108888" id="67108874">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="67108866" MIN="67108866"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108875" FlowIsn="67108889" id="67108875">
+                  <Column val="3"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="12"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="67108887"/>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108890" Key="1" Mode="R" SortType="67108891" VIEW="12" VIEWS="2">
+                  <DB comp="-1" obj="5"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108876" FlowIsn="67108892" id="67108876">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="67108867" MIN="67108867"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108877" FlowIsn="67108893" id="67108877">
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="13"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="67108891"/>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108895" Key="1" Mode="R" SortType="67108896" VIEW="14" VIEWS="2">
+                  <DB comp="-1" obj="4"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108878" FlowIsn="67108897" id="67108878">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="67108868" MIN="67108868"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108879" FlowIsn="67108898" id="67108879">
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="14"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="67108896"/>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="15" _last_test_id="15" id="1">
+          <FormEntry _last_isn="35" _last_test_id="35" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
-              <Model id="1"/>
-              <Width id="23" val="457"/>
-              <Height id="24" val="195"/>
+              <X id="21" val="16"/>
+              <Y id="22" val="30"/>
+              <Width id="23" val="585"/>
+              <Height id="24" val="184"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="1"/>
-              <FormName id="311" valUnicode="Rich Client - Shoe"/>
+              <FormName id="311" valUnicode="Stock Viewer"/>
             </PropertyList>
-            <Control _test_id="1" id="67108865">
+            <Control _test_id="35" id="67108899">
+              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+                <Text id="19" valUnicode="Stockroom"/>
+                <X id="21" val="503"/>
+                <Y id="22" val="14"/>
+                <Width id="23" val="78"/>
+                <Height id="24" val="19"/>
+                <Font id="50" val="7"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="16" id="67108880">
               <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="8"/>
-                <Y id="22" val="8"/>
-                <Width id="23" val="435"/>
-                <Height id="24" val="182"/>
+                <X id="21" val="10"/>
+                <Y id="22" val="35"/>
+                <Width id="23" val="571"/>
+                <Height id="24" val="146"/>
                 <_TitleHeight id="79" val="12"/>
                 <RowHeight id="80" val="15"/>
                 <Elements id="81" val="7"/>
-                <_WindowWidth id="241" val="435"/>
+                <_WindowWidth id="241" val="571"/>
+                <RowHighlightColor id="410"/>
+                <TitleColor id="677" val="4"/>
+                <DividerColor id="685" val="4"/>
+                <InactiveRowHighlightColor id="697"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="1" _test_id="2" id="67108866">
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="17" id="67108881">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="57"/>
+                <ControlLayer id="25" val="1"/>
+                <_Sortable id="134" val="Y"/>
+                <ColumnTitle id="139" valUnicode="Shoe Number"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="19" id="67108883">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="110"/>
+                <ControlLayer id="25" val="2"/>
+                <ColumnTitle id="139" valUnicode="Merk"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="23" id="67108887">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="152"/>
+                <ControlLayer id="25" val="3"/>
+                <ColumnTitle id="139" valUnicode="Type"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="25" id="67108889">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="30"/>
+                <ControlLayer id="25" val="4"/>
+                <ColumnTitle id="139" valUnicode="Size"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="29" id="67108893">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="62"/>
+                <ControlLayer id="25" val="5"/>
+                <ColumnTitle id="139" valUnicode="Color"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="31" id="67108895">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="69"/>
+                <ControlLayer id="25" val="6"/>
+                <ColumnTitle id="139" valUnicode="Quantity"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="33" id="67108897">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="74"/>
+                <ControlLayer id="25" val="7"/>
+                <ColumnTitle id="139" valUnicode="Price"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="1" _test_id="18" id="67108882">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                   <Var FieldID="67108865"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="12"/>
-                <Y id="22" val="23"/>
+                <X id="21" val="14"/>
+                <Y id="22" val="50"/>
                 <Width id="23" val="48"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="1"/>
@@ -256,90 +500,94 @@
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="1" _test_id="3" id="67108867">
+            <Control ISN_FATHER="67108880" _test_id="20" id="67108884">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                  <Var FieldID="67108866"/>
+                  <Var FieldID="67108873"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="67"/>
-                <Y id="22" val="23"/>
-                <Width id="23" val="48"/>
+                <X id="21" val="71"/>
+                <Y id="22" val="50"/>
+                <Width id="23" val="145"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="2"/>
-                <Data FieldID="67108866" id="43"/>
-                <ControlName id="46" val="BrandID"/>
+                <Data FieldID="67108873" id="43"/>
+                <ControlName id="46" val="Name"/>
                 <_Style id="63" val="1"/>
                 <TabOrder id="314" val="2"/>
+                <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="1" _test_id="4" id="67108868">
+            <Control ISN_FATHER="67108880" _test_id="24" id="67108888">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                  <Var FieldID="67108867"/>
+                  <Var FieldID="67108875"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="122"/>
-                <Y id="22" val="23"/>
-                <Width id="23" val="48"/>
+                <X id="21" val="181"/>
+                <Y id="22" val="50"/>
+                <Width id="23" val="145"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="3"/>
-                <Data FieldID="67108867" id="43"/>
-                <ControlName id="46" val="TypeID"/>
+                <Data FieldID="67108875" id="43"/>
+                <ControlName id="46" val="Name_0001"/>
                 <_Style id="63" val="1"/>
                 <TabOrder id="314" val="3"/>
+                <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="1" _test_id="5" id="67108869">
+            <Control ISN_FATHER="67108880" PDOD="1" _test_id="26" id="67108890">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                  <Var FieldID="67108868"/>
+                  <Var FieldID="67108877"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="177"/>
-                <Y id="22" val="23"/>
-                <Width id="23" val="48"/>
+                <X id="21" val="333"/>
+                <Y id="22" val="50"/>
+                <Width id="23" val="14"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="4"/>
-                <Data FieldID="67108868" id="43"/>
-                <ControlName id="46" val="SizeID"/>
+                <Data FieldID="67108877" id="43"/>
+                <ControlName id="46" val="Value"/>
                 <_Style id="63" val="1"/>
                 <TabOrder id="314" val="4"/>
+                <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="1" _test_id="6" id="67108870">
+            <Control ISN_FATHER="67108880" _test_id="30" id="67108894">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                  <Var FieldID="67108869"/>
+                  <Var FieldID="67108879"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="232"/>
-                <Y id="22" val="23"/>
-                <Width id="23" val="48"/>
+                <X id="21" val="363"/>
+                <Y id="22" val="50"/>
+                <Width id="23" val="55"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="5"/>
-                <Data FieldID="67108869" id="43"/>
-                <ControlName id="46" val="ColorID"/>
+                <Data FieldID="67108879" id="43"/>
+                <ControlName id="46" val="Name_0002"/>
                 <_Style id="63" val="1"/>
                 <TabOrder id="314" val="5"/>
+                <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="1" _test_id="7" id="67108871">
+            <Control ISN_FATHER="67108880" PDOD="1" _test_id="32" id="67108896">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                   <Var FieldID="67108870"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="287"/>
-                <Y id="22" val="23"/>
+                <X id="21" val="425"/>
+                <Y id="22" val="50"/>
                 <Width id="23" val="62"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="6"/>
@@ -351,14 +599,14 @@
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="17" _test_id="8" id="67108872">
+            <Control ISN_FATHER="67108880" PDOD="17" _test_id="34" id="67108898">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                   <Var FieldID="67108871"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="356"/>
-                <Y id="22" val="23"/>
+                <X id="21" val="494"/>
+                <Y id="22" val="50"/>
                 <Width id="23" val="67"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="7"/>
@@ -370,59 +618,26 @@
                 <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="9" id="67108873">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="55"/>
-                <ControlLayer id="25" val="1"/>
-                <_Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="ShoeID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="10" id="67108874">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="55"/>
-                <ControlLayer id="25" val="2"/>
-                <_Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="BrandID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="11" id="67108875">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="55"/>
-                <ControlLayer id="25" val="3"/>
-                <ColumnTitle id="139" valUnicode="TypeID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="12" id="67108876">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="55"/>
-                <ControlLayer id="25" val="4"/>
-                <ColumnTitle id="139" valUnicode="SizeID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="13" id="67108877">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="55"/>
-                <ControlLayer id="25" val="5"/>
-                <ColumnTitle id="139" valUnicode="ColorID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="14" id="67108878">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="69"/>
-                <ControlLayer id="25" val="6"/>
-                <ColumnTitle id="139" valUnicode="Quantity"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="15" id="67108879">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="74"/>
-                <ControlLayer id="25" val="7"/>
-                <ColumnTitle id="139" valUnicode="Price"/>
-              </PropertyList>
-            </Control>
           </FormEntry>
         </TaskForms>
+        <Expressions>
+          <Expression id="67108865">
+            <ExpSyntax val="{0,67108866}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108866">
+            <ExpSyntax val="{0,67108867}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108867">
+            <ExpSyntax val="{0,67108868}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108868">
+            <ExpSyntax val="{0,67108869}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+        </Expressions>
       </Task>
     </Programs>
   </ProgramsRepository>
