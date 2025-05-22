@@ -28,12 +28,12 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739393" _time="41089" date="22/05/2025" time="11:24:49"/>
+          <LastModified _date="739393" _time="58198" date="22/05/2025" time="16:09:58"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
           <DB id="67108865">
-            <DataObject comp="-1" obj="67108874"/>
+            <DataObject comp="-1" obj="67108875"/>
             <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -47,7 +47,7 @@
             <Column val="67108865"/>
             <Mode val="N"/>
           </Key>
-          <DB comp="-1" obj="67108874"/>
+          <DB comp="-1" obj="67108875"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -73,7 +73,7 @@
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="N"/>
+            <AllowOptions val="Y"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>
@@ -86,7 +86,7 @@
             <RecordCycle val="Y"/>
             <AllowEvents val="Y"/>
             <AllowIndexOptimization val="Y"/>
-            <AllowLocationInQuery val="Y"/>
+            <AllowLocationInQuery val="N"/>
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
@@ -151,7 +151,6 @@
         <TaskForms>
           <FormEntry _last_isn="3" _last_test_id="3" id="67108866">
             <PropertyList model="FORM_BROWSER">
-              <Model id="1"/>
               <RepeatedLines id="3" val="10"/>
               <HTMLFile id="4" val="Shoe_Select.htm"/>
               <_Comment id="218"/>
@@ -159,8 +158,6 @@
             </PropertyList>
             <Control _test_id="1" id="67108865">
               <PropertyList model="CTRL_BROWSER_TABLE">
-                <X id="21"/>
-                <Y id="22"/>
                 <_ControlName id="46" val="Table"/>
                 <DetailsLine id="148" val="2"/>
               </PropertyList>

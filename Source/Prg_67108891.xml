@@ -22,14 +22,15 @@
             <ParametersAttributes/>
           </ReturnValue>
           <SqlWhereExist val="N"/>
-          <TaskType val="O"/>
+          <TaskType val="C"/>
+          <Interactive val="Y"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739391" _time="56724" date="20/05/2025" time="15:45:24"/>
+          <LastModified _date="739393" _time="38265" date="22/05/2025" time="10:37:45"/>
         </Header>
-        <ItemIsn val="2"/>
+        <ItemIsn val="9"/>
         <Resource>
           <DB id="67108865">
             <DataObject comp="-1" obj="1"/>
@@ -39,7 +40,18 @@
             <Cache val="Y"/>
             <IdentifyRowModifications val="84"/>
           </DB>
-          <Columns/>
+          <Columns>
+            <Column id="67108866" name="LogOut">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="5"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="5"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -56,7 +68,7 @@
           <InitialMode val="E"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
-          <VarRange/>
+          <VarRange LastIsn="4"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -81,8 +93,8 @@
             <AllowRange val="Y"/>
             <AllowIndexChange val="Y"/>
             <AllowSorting val="Y"/>
-            <AllowIOFiles val="Y"/>
-            <RecordCycle val="Y"/>
+            <AllowIOFiles val="N"/>
+            <TabbingCycle val="R"/>
             <AllowEvents val="Y"/>
             <AllowIndexOptimization val="Y"/>
             <AllowLocationInQuery val="Y"/>
@@ -110,6 +122,7 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <DATAVIEW_SRC FlowIsn="67108865" IDX="67108865" Type="M">
@@ -120,6 +133,67 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="67108866" FlowIsn="67108868" id="67108866">
+                  <ASS val="67108866"/>
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Range MAX="67108866" MIN="67108866"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108867" FlowIsn="67108869" id="67108867">
+                  <ASS val="67108865"/>
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Range MAX="67108865" MIN="67108865"/>
+                  <INT_DIT_INFO>
+                    <v>67108875</v>
+                  </INT_DIT_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108868" FlowIsn="67108870" id="67108868">
+                  <Column val="3"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108869" FlowIsn="67108871" id="67108869">
+                  <ASS val="67108867"/>
+                  <Column val="4"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Range MAX="67108867" MIN="67108867"/>
+                  <INT_DIT_INFO>
+                    <v>67108876</v>
+                  </INT_DIT_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108870" FlowIsn="67108872" id="67108870">
+                  <Column val="5"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
@@ -131,43 +205,276 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="67108867" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="67108866"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <BLOCK EndBlock="67108874" EndBlockSegment="67108879" FlowIsn="67108873" Type="I">
+                  <Condition Exp="67108868"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108873" FlowIsn="67108902" id="67108873">
+                  <ASS val="67108877"/>
+                  <Column val="67108866"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="N" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108876" FlowIsn="67108891" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <RetValVar val="67108873"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="67108904" EndBlockSegment="67108904" FlowIsn="67108903" Type="I">
+                  <Condition Exp="67108878"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="67108875">
+                  <Parent val="32768"/>
+                  <FieldID val="67108865"/>
+                  <WithValue val="67108869"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="67108876">
+                  <Parent val="32768"/>
+                  <FieldID val="67108866"/>
+                  <WithValue val="67108870"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="67108877">
+                  <Parent val="32768"/>
+                  <FieldID val="67108867"/>
+                  <WithValue val="67108871"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="67108882">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="67108886">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="67108904"/>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="67108874" EndBlockSegment="67108874" FlowIsn="67108879" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108872" FlowIsn="67108880" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="67108874"/>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="2" _last_test_id="2" id="1">
-            <PropertyList model="FORM_GUI0">
+          <FormEntry _last_isn="12" _last_test_id="12" id="1">
+            <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="36"/>
-              <Y id="22" val="81"/>
-              <Width id="23" val="566"/>
-              <Height id="24" val="31"/>
+              <Y id="22" val="57"/>
+              <Width id="23" val="562"/>
+              <Height id="24" val="26"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="LogOut"/>
             </PropertyList>
-            <Control _test_id="2" id="67108866">
-              <PropertyList model="CTRL_GUI0_IMAGE">
-                <X id="21" val="2"/>
+            <Control _test_id="1" id="67108865">
+              <PropertyList model="CTRL_RICH_CLIENT_IMAGE">
+                <X id="21" val="10"/>
                 <Y id="22" val="2"/>
-                <Width id="23" val="27"/>
+                <Width id="23" val="30"/>
                 <Height id="24" val="20"/>
-                <DefaultImageFile id="88" val="C:\Projects\Gimpies\img\account.png"/>
+                <Data Exp="67108873" id="43"/>
+                <BorderStyle id="64" val="3"/>
+                <Attribute id="83" val="85"/>
+                <StudioImageFile id="88"/>
                 <ImageStyle id="89" val="4"/>
                 <TabOrder id="314" val="1"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="1" id="67108865">
-              <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
-                <X id="21" val="497"/>
+            <Control _test_id="11" id="67108875">
+              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+                <Text Exp="67108874" id="19" valUnicode="Text"/>
+                <X id="21" val="45"/>
+                <Y id="22" val="2"/>
+                <Width id="23" val="62"/>
+                <Height id="24" val="14"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="12" id="67108876">
+              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+                <Text Exp="67108875" id="19" valUnicode="Text"/>
+                <X id="21" val="45"/>
+                <Y id="22" val="16"/>
+                <Width id="23" val="62"/>
+                <Height id="24" val="6"/>
+                <Color id="51" val="8"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="8" id="67108872">
+              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+                <X id="21" val="494"/>
                 <Y id="22" val="2"/>
                 <Width id="23" val="66"/>
                 <Height id="24" val="20"/>
+                <Data id="43"/>
+                <ControlName id="46" val="Password"/>
                 <Color id="51" val="7"/>
                 <Format id="82" valUnicode="Logout"/>
-                <DefaultImageFile id="88" val="C:\Projects\Gimpies\img\red.jpg"/>
+                <ImageListFileName id="88" val="C:\Projects\Gimpies\img\red.jpg"/>
                 <ButtonStyle id="96" val="2"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="67108866"/>
+                </RaiseEvent>
                 <TabOrder id="314" val="2"/>
               </PropertyList>
             </Control>
           </FormEntry>
         </TaskForms>
+        <Expressions>
+          <Expression id="67108865">
+            <ExpSyntax val="{32768,67108865}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108866">
+            <ExpSyntax val="{32768,67108866}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108867">
+            <ExpSyntax val="{32768,67108867}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108868">
+            <ExpSyntax val="{32768,67108865} &lt;> ''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108869">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108870">
+            <ExpSyntax val="0"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108871">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108872">
+            <ExpSyntax val="'You Have To Login'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108873">
+            <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim('account')&amp; '.png'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108874">
+            <ExpSyntax val="{0,67108867}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108875">
+            <ExpSyntax val="{0,67108869}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108876">
+            <ExpSyntax val="'Are you sure you want to log out'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108877">
+            <ExpSyntax val="0"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108878">
+            <ExpSyntax val="{0,67108873} = 6"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+        </Expressions>
+        <EVNT DESC="LogOut" FORCE_EXIT="N" id="67108865">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="LogOut Butten" FORCE_EXIT="N" id="67108866">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="67108867" id="2"/>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="67108866" id="3"/>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="67108869" id="4"/>
       </Task>
     </Programs>
   </ProgramsRepository>

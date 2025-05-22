@@ -28,12 +28,12 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739391" _time="59220" date="20/05/2025" time="16:27:00"/>
+          <LastModified _date="739392" _time="71182" date="21/05/2025" time="19:46:22"/>
         </Header>
-        <ItemIsn val="11"/>
+        <ItemIsn val="16"/>
         <Resource>
           <DB id="67108865">
-            <DataObject comp="-1" obj="8"/>
+            <DataObject comp="-1" obj="1"/>
             <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -47,7 +47,7 @@
             <Column val="1"/>
             <Mode val="N"/>
           </Key>
-          <DB comp="-1" obj="8"/>
+          <DB comp="-1" obj="1"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -57,7 +57,7 @@
           <InitialMode val="C"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
-          <VarRange LastIsn="3"/>
+          <VarRange LastIsn="5"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -120,55 +120,151 @@
                   <Direction val="C"/>
                 </DATAVIEW_SRC>
               </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="67108868" propagate="78">
-            <Level val="T"/>
-            <Type val="P"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
-            <ExecuteOn_ val="S"/>
-            <LogicLines>
               <LogicLine>
-                <Update FlowIsn="67108874">
-                  <WithValue val="67108865"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
+                <Select FieldID="67108876" FlowIsn="67108875" id="67108876">
+                  <ASS val="67108868"/>
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Range MAX="67108868" MIN="67108868"/>
+                  <_DitIndexForToolkit val="2"/>
+                  <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
-                  <Modifier val="B"/>
+                  <Modifier val="S"/>
                   <Direction val="C"/>
-                </Update>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108877" FlowIsn="67108876" id="67108877">
+                  <ASS val="67108869"/>
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <Range MAX="67108869" MIN="67108869"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108878" FlowIsn="67108877" id="67108878">
+                  <Column val="3"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108879" FlowIsn="67108878" id="67108879">
+                  <Column val="4"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108880" FlowIsn="67108879" id="67108880">
+                  <Column val="5"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="4" _last_test_id="4" id="1">
+          <FormEntry _last_isn="8" _last_test_id="8" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
+              <X id="21" val="138"/>
+              <Y id="22" val="55"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="SalesTransaction"/>
             </PropertyList>
+            <Control _test_id="6" id="67108870">
+              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+                <Text id="19" valUnicode="EmployeeID"/>
+                <X id="21" val="62"/>
+                <Y id="22" val="28"/>
+                <Width id="23" val="49"/>
+                <Height id="24" val="16"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="1" _test_id="5" id="67108869">
+              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                <Model ID="MODEL_RICH_CLIENT" id="1">
+                  <Var FieldID="67108876"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="115"/>
+                <Y id="22" val="28"/>
+                <Width id="23" val="50"/>
+                <Height id="24" val="16"/>
+                <Data FieldID="67108876" id="43"/>
+                <ControlName id="46" val="EmployeeID"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="8" id="67108872">
+              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+                <Text id="19" valUnicode="UserName"/>
+                <X id="21" val="42"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="44"/>
+                <Height id="24" val="16"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="7" id="67108871">
+              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                <Model ID="MODEL_RICH_CLIENT" id="1">
+                  <Var FieldID="67108877"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="90"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="147"/>
+                <Height id="24" val="16"/>
+                <Data FieldID="67108877" id="43"/>
+                <ControlName id="46" val="UserName"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="67108865">
+          <Expression id="67108868">
             <ExpSyntax val="{32768,67108866}"/>
             <ExpAttribute val="N"/>
           </Expression>
-          <Expression id="67108866">
-            <ExpSyntax val="???"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="67108868">
+          <Expression id="67108869">
             <ExpSyntax val="{32768,67108865}"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="67108876" id="4"/>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="67108877" id="5"/>
       </Task>
     </Programs>
   </ProgramsRepository>
