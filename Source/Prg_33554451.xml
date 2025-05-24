@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739393" _time="30911" date="22/05/2025" time="08:35:11"/>
+          <LastModified _date="739395" _time="1153" date="24/05/2025" time="00:19:13"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -67,7 +67,7 @@
           <InitialMode val="M"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
-          <VarRange LastIsn="12"/>
+          <VarRange LastIsn="14"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -149,7 +149,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="9"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -163,7 +163,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Range MAX="67108873" MIN="67108873"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -176,7 +176,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="12"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -189,7 +189,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="12"/>
+                  <_DitIndexForToolkit val="13"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -202,7 +202,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -238,9 +238,47 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="67108868" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="67108866"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="67108887">
+                  <FieldID val="67108870"/>
+                  <WithValue val="67108874"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="67108889">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="13" _last_test_id="13" id="1">
+          <FormEntry _last_isn="14" _last_test_id="14" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
               <Width id="23" val="545"/>
               <Height id="24" val="244"/>
@@ -273,6 +311,20 @@
                   <PublicObject comp="-1" obj="67108865"/>
                 </RaiseEvent>
                 <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="14" id="67108878">
+              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+                <X id="21" val="208"/>
+                <Y id="22" val="30"/>
+                <Width id="23" val="69"/>
+                <Height id="24" val="14"/>
+                <Format id="82" valUnicode="clear filter"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="67108866"/>
+                </RaiseEvent>
+                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
             <Control _test_id="1" id="33554433">
@@ -339,7 +391,7 @@
                 <Data FieldID="33554433" id="43"/>
                 <ControlName id="46" val="EmployeeID"/>
                 <_Style id="63" val="1"/>
-                <TabOrder id="314" val="3"/>
+                <TabOrder id="314" val="4"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -358,7 +410,7 @@
                 <Data FieldID="33554434" id="43"/>
                 <ControlName id="46" val="UserName"/>
                 <_Style id="63" val="1"/>
-                <TabOrder id="314" val="4"/>
+                <TabOrder id="314" val="5"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -377,7 +429,7 @@
                 <Data FieldID="33554435" id="43"/>
                 <ControlName id="46" val="Password"/>
                 <_Style id="63" val="1"/>
-                <TabOrder id="314" val="5"/>
+                <TabOrder id="314" val="6"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -396,7 +448,7 @@
                 <Data FieldID="33554436" id="43"/>
                 <ControlName id="46" val="Role"/>
                 <_Style id="63" val="1"/>
-                <TabOrder id="314" val="6"/>
+                <TabOrder id="314" val="7"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -415,7 +467,7 @@
                 <Data FieldID="33554437" id="43"/>
                 <ControlName id="46" val="Active"/>
                 <_Style id="63" val="1"/>
-                <TabOrder id="314" val="7"/>
+                <TabOrder id="314" val="8"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -423,13 +475,17 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="67108871">
-            <ExpSyntax val="{0,67108870}"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="67108873">
             <ExpSyntax val="CndRange({0,67108870} &lt;> '',{0,67108870})"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108874">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108876">
+            <ExpSyntax val="'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="zoeken" FORCE_EXIT="N" id="67108865">
@@ -437,7 +493,13 @@
             <EventType val="N"/>
           </Event>
         </EVNT>
+        <EVNT DESC="Clear_Filter" FORCE_EXIT="N" id="67108866">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
         <VarRangeInfo Mode="E" VarRangeVeeIsn="33554434" id="12"/>
+        <VarRangeInfo Mode="T" VarRangeVeeIsn="33554437" id="13"/>
       </Task>
     </Programs>
   </ProgramsRepository>

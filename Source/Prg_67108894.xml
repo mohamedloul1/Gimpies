@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739393" _time="58336" date="22/05/2025" time="16:12:16"/>
+          <LastModified _date="739394" _time="46586" date="23/05/2025" time="12:56:26"/>
         </Header>
         <ItemIsn val="9"/>
         <Resource>
@@ -374,7 +374,7 @@
             <External val="N"/>
             <FormType val="M"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739393" _time="58175" date="22/05/2025" time="16:09:35"/>
+            <LastModified _date="739394" _time="46586" date="23/05/2025" time="12:56:26"/>
           </Header>
           <ItemIsn val="38"/>
           <Resource>
@@ -843,9 +843,9 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
-            <LogicUnit id="67108867" propagate="78">
-              <Level val="R"/>
-              <Type val="S"/>
+            <LogicUnit id="67108868" propagate="78">
+              <Level val="C"/>
+              <Type val="V"/>
               <Scope val="S"/>
               <EngineDirective val="S"/>
               <ShowMessage val="Y"/>
@@ -853,17 +853,18 @@
               <Event>
                 <EventType val="S"/>
               </Event>
+              <TXT val="Quantity"/>
               <ExecuteOn_ val="O"/>
               <LogicLines>
                 <LogicLine>
-                  <BLOCK EndBlock="67108957" EndBlockSegment="67108959" FlowIsn="67108956" Type="I">
-                    <Condition Exp="67108876"/>
+                  <BLOCK EndBlock="67108975" EndBlockSegment="67108976" FlowIsn="67108974" Type="I">
+                    <Condition Exp="67108884"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </BLOCK>
                 </LogicLine>
                 <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108877" FlowIsn="67108958" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108885" FlowIsn="67108977" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                     <AppendToErrorLog val="N"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
@@ -871,14 +872,14 @@
                   </STP>
                 </LogicLine>
                 <LogicLine>
-                  <BLOCK EndBlock="67108957" EndBlockSegment="67108957" FlowIsn="67108959" Type="E">
+                  <BLOCK EndBlock="67108975" EndBlockSegment="67108975" FlowIsn="67108976" Type="E">
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </BLOCK>
                 </LogicLine>
                 <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108878" FlowIsn="67108960" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108886" FlowIsn="67108978" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                     <AppendToErrorLog val="N"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
@@ -886,73 +887,7 @@
                   </STP>
                 </LogicLine>
                 <LogicLine>
-                  <Update FlowIsn="67108979">
-                    <FieldID val="67108900"/>
-                    <WithValue val="67108879"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-                <LogicLine>
-                  <END_BLK FlowIsn="67108957"/>
-                </LogicLine>
-              </LogicLines>
-            </LogicUnit>
-            <LogicUnit id="67108868" propagate="78">
-              <Level val="H"/>
-              <Type val="U"/>
-              <Scope val="S"/>
-              <EngineDirective val="S"/>
-              <ShowMessage val="Y"/>
-              <Condition val="89"/>
-              <Event>
-                <EventType val="U"/>
-                <PublicObject comp="-1" obj="67108865"/>
-              </Event>
-              <ExecuteOn_ val="O"/>
-              <LogicLines>
-                <LogicLine>
-                  <BLOCK EndBlock="67108982" EndBlockSegment="67108986" FlowIsn="67108981" Type="I">
-                    <Condition Exp="67108880"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </BLOCK>
-                </LogicLine>
-                <LogicLine>
-                  <BLOCK EndBlock="67108982" EndBlockSegment="67108983" FlowIsn="67108986" Type="E">
-                    <Condition Exp="67108882"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </BLOCK>
-                </LogicLine>
-                <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108883" FlowIsn="67108987" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                    <AppendToErrorLog val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </STP>
-                </LogicLine>
-                <LogicLine>
-                  <BLOCK EndBlock="67108982" EndBlockSegment="67108982" FlowIsn="67108983" Type="E">
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </BLOCK>
-                </LogicLine>
-                <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108881" FlowIsn="67108984" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                    <AppendToErrorLog val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </STP>
-                </LogicLine>
-                <LogicLine>
-                  <END_BLK FlowIsn="67108982"/>
+                  <END_BLK FlowIsn="67108975"/>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -1244,36 +1179,20 @@
               <ExpSyntax val="{0,67108893}"/>
               <ExpAttribute val="N"/>
             </Expression>
-            <Expression id="67108876">
-              <ExpSyntax val="{0,67108900} &lt;= {0,67108901}"/>
-              <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="67108877">
-              <ExpSyntax val="'is goed'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="67108878">
-              <ExpSyntax val="'You sell' &amp; Str({0,67108900},'') &amp; 'pieces while you only have'&amp; Str({0,67108901},'') &amp; 'pieces'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="67108879">
-              <ExpSyntax val="0"/>
-              <ExpAttribute val="N"/>
-            </Expression>
-            <Expression id="67108880">
-              <ExpSyntax val="{0,67108900} &lt;> 0"/>
-              <ExpAttribute val="B"/>
-            </Expression>
-            <Expression id="67108881">
-              <ExpSyntax val="'(Quantity For Sell) is (0) change it to the quantity you want to sell'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="67108882">
-              <ExpSyntax val="{0,67108900} > {0,67108901}"/>
-              <ExpAttribute val="B"/>
-            </Expression>
             <Expression id="67108883">
               <ExpSyntax val="'You sell' &amp; Str({0,67108900},'') &amp; 'pieces while you only have'&amp; Str({0,67108901},'') &amp; 'pieces'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="67108884">
+              <ExpSyntax val="{0,67108900} > {0,67108898}"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="67108885">
+              <ExpSyntax val="'SALE Q IS GROOTER DAN JOUW Q'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="67108886">
+              <ExpSyntax val="'IS GOED ZO '"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
