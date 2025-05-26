@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739396" _time="82545" date="25/05/2025" time="22:55:45"/>
+          <LastModified _date="739397" _time="41838" date="26/05/2025" time="11:37:18"/>
         </Header>
         <ItemIsn val="14"/>
         <Resource>
@@ -163,7 +163,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="13"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -231,7 +231,7 @@
                   <INT_DIT_INFO>
                     <v>67108880</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="14"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -257,7 +257,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Range MAX="67108874" MIN="67108874"/>
-                  <_DitIndexForToolkit val="15"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -271,7 +271,10 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Range MAX="67108870" MIN="67108870"/>
-                  <_DitIndexForToolkit val="16"/>
+                  <INT_DIT_INFO>
+                    <v>67108901</v>
+                  </INT_DIT_INFO>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -454,9 +457,81 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="67108877" propagate="78">
+            <Level val="C"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+            </Event>
+            <TXT val="Active"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <BLOCK EndBlock="67108929" EndBlockSegment="67108935" FlowIsn="67108928" Type="I">
+                  <Condition Exp="67108886"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="67108932">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108887" FlowIsn="67108930" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="67108929" EndBlockSegment="67108929" FlowIsn="67108935" Type="E">
+                  <Condition Exp="67108888"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="67108938">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108889" FlowIsn="67108936" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="67108929"/>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="40" _last_test_id="40" id="1">
+          <FormEntry _last_isn="41" _last_test_id="41" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="28"/>
               <Y id="22" val="38"/>
@@ -597,7 +672,7 @@
             </Control>
             <Control ISN_FATHER="67108865" PDOD="128" _test_id="8" id="67108872">
               <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="70"/>
+                <Width id="23" val="73"/>
                 <ControlLayer id="25" val="4"/>
                 <HorizontalAlignment id="65" val="2"/>
                 <ColumnTitle id="139" valUnicode="Active"/>
@@ -617,6 +692,29 @@
                 <ControlLayer id="25" val="6"/>
                 <HorizontalAlignment id="65" val="2"/>
                 <ColumnTitle id="139" valUnicode="Delete"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108865" PDOD="128" _test_id="37" id="67108901">
+              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                  <Var FieldID="67108878"/>
+                </Model>
+                <Placement bottom="100" id="20" right="100"/>
+                <X id="21" val="352"/>
+                <Y id="22" val="68"/>
+                <Width id="23" val="35"/>
+                <Height id="24" val="16"/>
+                <ControlLayer id="25" val="4"/>
+                <Data FieldID="67108878" id="43"/>
+                <ControlName id="46" val="IsActive"/>
+                <Color Exp="67108885" id="51" val="2"/>
+                <_Style id="63" val="1"/>
+                <Format id="82" valUnicode="20"/>
+                <TabOrder id="314" val="9"/>
+                <Border id="452"/>
+                <CornerRadius id="668"/>
+                <FocusColor id="678"/>
+                <DisabledColor Exp="67108885" id="717"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="67108865" _test_id="16" id="67108880">
@@ -678,55 +776,25 @@
                 <DisabledColor id="717"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="67108865" PDOD="192" _test_id="9" id="67108873">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                  <Var FieldID="67108869"/>
-                </Model>
+            <Control ISN_FATHER="67108865" PDOD="192" _test_id="41" id="67108905">
+              <PropertyList model="CTRL_RICH_CLIENT_CHECKBOX">
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="321"/>
-                <Y id="22" val="69"/>
-                <Width id="23" val="57"/>
-                <Height id="24" val="12"/>
-                <ControlLayer id="25" val="4"/>
-                <Data FieldID="67108869" id="43"/>
-                <ControlName id="46" val="Active"/>
-                <Color id="51" val="6"/>
-                <_Style id="63" val="1"/>
-                <HorizontalAlignment id="65" val="2"/>
-                <Format id="82" valUnicode="5"/>
-                <TabOrder id="314" val="9"/>
-                <AllowParking id="315"/>
-                <Border id="452"/>
-                <CornerRadius id="668"/>
-                <FocusColor id="678" val="8"/>
-                <DisabledColor id="717"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="67108865" PDOD="128" _test_id="37" id="67108901">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                  <Var FieldID="67108878"/>
-                </Model>
-                <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="321"/>
-                <Y id="22" val="84"/>
-                <Width id="23" val="70"/>
+                <X id="21" val="323"/>
+                <Y id="22" val="70"/>
+                <Width id="23" val="18"/>
                 <Height id="24" val="16"/>
                 <ControlLayer id="25" val="4"/>
-                <Data FieldID="67108878" id="43"/>
-                <ControlName id="46" val="IsActive"/>
-                <_Style id="63" val="1"/>
-                <Format id="82" valUnicode="20"/>
+                <Data FieldID="67108869" id="43"/>
+                <Text id="45"/>
+                <ControlName id="46" val="Active"/>
+                <Style id="63" val="1"/>
                 <TabOrder id="314" val="10"/>
-                <Border id="452"/>
-                <CornerRadius id="668"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="67108865" PDOD="128" _test_id="34" id="67108898">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="467"/>
+                <X id="21" val="470"/>
                 <Y id="22" val="71"/>
                 <Width id="23" val="42"/>
                 <Height id="24" val="15"/>
@@ -747,7 +815,7 @@
             <Control ISN_FATHER="67108865" PDOD="128" _test_id="40" id="67108904">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="402"/>
+                <X id="21" val="405"/>
                 <Y id="22" val="72"/>
                 <Width id="23" val="42"/>
                 <Height id="24" val="15"/>
@@ -768,25 +836,13 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="67108865">
-            <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim('update_blue')&amp; '.png'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="67108867">
             <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim({0,67108866})&amp; '.jpg'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="67108868">
-            <ExpSyntax val="{0,67108868} &lt;> 'admin'"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="67108870">
             <ExpSyntax val="CndRange({0,67108870} = 'TRUE'LOG,{0,67108870})"/>
             <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="67108871">
-            <ExpSyntax val="{0,67108875} + 1"/>
-            <ExpAttribute val="N"/>
           </Expression>
           <Expression id="67108874">
             <ExpSyntax val="CndRange({0,67108877} &lt;> '',{0,67108877})"/>
@@ -807,6 +863,26 @@
           <Expression id="67108884">
             <ExpSyntax val="{0,67108875}+1"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108885">
+            <ExpSyntax val="IF ( {0,67108869} , 9 ,10 )"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="67108886">
+            <ExpSyntax val="{0,67108869} = 'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108887">
+            <ExpSyntax val="'The user has been deactivated and will no longer be able to log in.&#xD;&#xA;'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108888">
+            <ExpSyntax val="{0,67108869} = 'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108889">
+            <ExpSyntax val="'je hebt het activet'"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="refresh" FORCE_EXIT="N" id="67108865">

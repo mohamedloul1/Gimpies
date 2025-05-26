@@ -18,6 +18,7 @@
  <DataSourceRepository>
   <DataObjects>
  
+ 
 <DataObject PhysicalName="Employee" Resident="N" UniqueISNConvState="12" data_source="Gimpies" id="1" name="Employee">
 
   <Encrypt val="N"/>
@@ -462,7 +463,7 @@
 
   <Position val="D"/>
 
-  <PositionIndex val="-1"/>
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="2"/>
 
@@ -482,17 +483,17 @@
     </Column>
     <Column id="2" name="Value">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_NUMERIC" id="1"/>
-        <Picture id="157" valUnicode="2"/>
-        <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="4"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Name"/>
         <_Dec id="181"/>
         <_Whole id="182" val="2"/>
         <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Name" PIC_U="2" Size="2" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical Name="Name" PIC_U="4" Size="4" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
@@ -529,7 +530,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
-          <Size val="2"/>
+          <Size val="4"/>
           <Column val="2"/>
           <Order val="A"/>
         </Segment>

@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739393" _time="58341" date="22/05/2025" time="16:12:21"/>
+          <LastModified _date="739397" _time="49487" date="26/05/2025" time="13:44:47"/>
         </Header>
         <ItemIsn val="9"/>
         <Resource>
@@ -302,8 +302,8 @@
             <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="359"/>
               <Y id="22" val="43"/>
-              <Width id="23" val="601"/>
-              <Height id="24" val="380"/>
+              <Width id="23" val="762"/>
+              <Height id="24" val="498"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Sales"/>
             </PropertyList>
@@ -312,14 +312,14 @@
                 <Placement id="20" right="100"/>
                 <X1 id="21"/>
                 <Y1 id="22" val="26"/>
-                <X2 id="23" val="599"/>
+                <X2 id="23" val="749"/>
                 <Y2 id="24"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="22" id="67108886">
               <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
                 <Y id="22" val="1"/>
-                <Width id="23" val="599"/>
+                <Width id="23" val="749"/>
                 <Height id="24" val="23"/>
                 <ControlName id="46" val="LogOut"/>
                 <TaskNumber comp="-1" id="183" obj="67108891"/>
@@ -343,8 +343,8 @@
             <Control PDOD="128" _test_id="5" id="67108869">
               <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
                 <Y id="22" val="180"/>
-                <Width id="23" val="597"/>
-                <Height id="24" val="199"/>
+                <Width id="23" val="761"/>
+                <Height id="24" val="322"/>
                 <ControlName id="46" val="Rich Client - Shoe"/>
                 <TaskNumber comp="-1" id="183" obj="67108897"/>
                 <TabOrder id="314" val="3"/>
@@ -520,7 +520,7 @@
             <External val="N"/>
             <FormType val="M"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739393" _time="58181" date="22/05/2025" time="16:09:41"/>
+            <LastModified _date="739397" _time="49171" date="26/05/2025" time="13:39:31"/>
           </Header>
           <ItemIsn val="38"/>
           <Resource>
@@ -1009,7 +1009,7 @@
                   </BLOCK>
                 </LogicLine>
                 <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108877" FlowIsn="67108958" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108878" FlowIsn="67108958" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                     <AppendToErrorLog val="N"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
@@ -1024,23 +1024,12 @@
                   </BLOCK>
                 </LogicLine>
                 <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108878" FlowIsn="67108960" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="67108877" FlowIsn="67108960" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                     <AppendToErrorLog val="N"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </STP>
-                </LogicLine>
-                <LogicLine>
-                  <Update FlowIsn="67108979">
-                    <FieldID val="67108900"/>
-                    <WithValue val="67108879"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
                 </LogicLine>
                 <LogicLine>
                   <END_BLK FlowIsn="67108957"/>
@@ -1296,7 +1285,7 @@
                   <CornerRadius id="668"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="67108875" PDOD="1" _test_id="47" id="67108911">
+              <Control ISN_FATHER="67108875" _test_id="47" id="67108911">
                 <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                   <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                     <Var FieldID="67108898"/>
@@ -1391,7 +1380,7 @@
               <ExpAttribute val="N"/>
             </Expression>
             <Expression id="67108876">
-              <ExpSyntax val="{0,67108900} &lt;= {0,67108901}"/>
+              <ExpSyntax val="{0,67108900} > {0,67108901}"/>
               <ExpAttribute val="B"/>
             </Expression>
             <Expression id="67108877">
