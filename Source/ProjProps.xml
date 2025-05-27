@@ -18,6 +18,14 @@
       <ExposeComment val="N"/>
       <ProjectName val="Gimpies"/>
     </ProjectData>
+    <WebClientData>
+      <OutputFolder val=".\output"/>
+      <SourceImagesFolder val=".\images"/>
+      <Theme val="Material Design"/>
+      <GenerateMetadataOnly val="N"/>
+      <MultiLingualSupport val="N"/>
+      <UseWorkspace val="N"/>
+    </WebClientData>
   </ProjectProperties>
 
 </Application>

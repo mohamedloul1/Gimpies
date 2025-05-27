@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header ISEMPTY_TSK="1" ISN_2="1" LastIsn="1" id="67108900">
+        <Header Description="Admin" ISN_2="1" LastIsn="1" id="67108900">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -22,21 +22,32 @@
             <ParametersAttributes/>
           </ReturnValue>
           <SqlWhereExist val="N"/>
-          <TaskType val="O"/>
+          <TaskType val="C"/>
+          <Interactive val="Y"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified date="00/00/0000" time="00:00:00"/>
+          <LastModified _date="739398" _time="34513" date="27/05/2025" time="09:35:13"/>
         </Header>
+        <ItemIsn val="7"/>
         <Resource>
+          <DB id="67108865">
+            <DataObject comp="-1" obj="6"/>
+            <Access val="W"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="Y"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
           <Columns/>
         </Resource>
         <Information>
           <Key>
+            <Column val="1"/>
             <Mode val="N"/>
           </Key>
-          <DB/>
+          <DB comp="-1" obj="6"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -71,8 +82,8 @@
             <AllowRange val="Y"/>
             <AllowIndexChange val="Y"/>
             <AllowSorting val="Y"/>
-            <AllowIOFiles val="Y"/>
-            <RecordCycle val="Y"/>
+            <AllowIOFiles val="N"/>
+            <TabbingCycle val="R"/>
             <AllowEvents val="Y"/>
             <AllowIndexOptimization val="Y"/>
             <AllowLocationInQuery val="Y"/>
@@ -100,25 +111,191 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <DATAVIEW_SRC FlowIsn="67108865" Type="M">
+                <DATAVIEW_SRC FlowIsn="67108865" IDX="67108865" Type="M">
                   <Condition val="N"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </DATAVIEW_SRC>
               </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108865" FlowIsn="67108867" id="67108865">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108866" FlowIsn="67108868" id="67108866">
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108867" FlowIsn="67108869" id="67108867">
+                  <Column val="3"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108868" FlowIsn="67108870" id="67108868">
+                  <Column val="4"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108869" FlowIsn="67108871" id="67108869">
+                  <Column val="5"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108870" FlowIsn="67108872" id="67108870">
+                  <Column val="6"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108871" FlowIsn="67108873" id="67108871">
+                  <Column val="7"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="67108868" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="67108865"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="67108875">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="67108898"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry id="1">
-            <PropertyList model="FORM_GUI0">
+          <FormEntry _last_isn="3" _last_test_id="3" id="1">
+            <PropertyList model="FORM_RICH_CLIENT">
+              <X id="21" val="90"/>
+              <Y id="22" val="17"/>
+              <Width id="23" val="979"/>
+              <Height id="24" val="702"/>
+              <FormUnits id="33" val="4"/>
+              <VerticalFactor id="34" val="1"/>
+              <HorizontalFactor id="35" val="1"/>
+              <GridX id="38" val="5"/>
+              <GridY id="39" val="13"/>
               <_Comment id="218"/>
-              <FormName id="311"/>
+              <FormName id="311" valUnicode="Admin"/>
             </PropertyList>
+            <Control PDOD="128" _test_id="1" id="67108865">
+              <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
+                <X id="21" val="1"/>
+                <Y id="22" val="1"/>
+                <Width id="23" val="959"/>
+                <Height id="24" val="57"/>
+                <ControlName id="46" val="LogOut"/>
+                <TaskNumber comp="-1" id="183" obj="67108891"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="3" id="67108867">
+              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+                <X id="21" val="749"/>
+                <Y id="22" val="65"/>
+                <Width id="23" val="85"/>
+                <Height id="24" val="26"/>
+                <Format id="82" valUnicode="Manage Users"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="67108865"/>
+                </RaiseEvent>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="2" id="67108866">
+              <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
+                <X id="21" val="1"/>
+                <Y id="22" val="101"/>
+                <Width id="23" val="959"/>
+                <Height id="24" val="607"/>
+                <ControlName id="46" val="Stock Viewer"/>
+                <TaskNumber comp="-1" id="183" obj="67108897"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
           </FormEntry>
         </TaskForms>
+        <EVNT DESC="ManageUsers_Butten" FORCE_EXIT="N" id="67108865">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
       </Task>
     </Programs>
   </ProgramsRepository>

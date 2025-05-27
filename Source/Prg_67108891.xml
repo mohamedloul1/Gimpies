@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739393" _time="38265" date="22/05/2025" time="10:37:45"/>
+          <LastModified _date="739398" _time="33297" date="27/05/2025" time="09:14:57"/>
         </Header>
         <ItemIsn val="9"/>
         <Resource>
@@ -343,7 +343,7 @@
             <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="36"/>
               <Y id="22" val="57"/>
-              <Width id="23" val="562"/>
+              <Width id="23" val="761"/>
               <Height id="24" val="26"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="LogOut"/>
@@ -385,7 +385,7 @@
             </Control>
             <Control PDOD="128" _test_id="8" id="67108872">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="494"/>
+                <X id="21" val="690"/>
                 <Y id="22" val="2"/>
                 <Width id="23" val="66"/>
                 <Height id="24" val="20"/>
@@ -438,7 +438,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="67108873">
-            <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim('account')&amp; '.png'"/>
+            <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim({32768,67108865})&amp; '.jpg'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="67108874">

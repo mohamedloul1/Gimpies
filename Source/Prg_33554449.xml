@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739391" _time="56765" date="20/05/2025" time="15:46:05"/>
+          <LastModified _date="739398" _time="35270" date="27/05/2025" time="09:47:50"/>
         </Header>
         <ItemIsn val="22"/>
         <Resource>
@@ -354,7 +354,7 @@
                   <Event>
                     <EventType val="N"/>
                   </Event>
-                  <TaskID comp="-1" obj="67108887"/>
+                  <TaskID comp="-1" obj="67108894"/>
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
@@ -376,32 +376,16 @@
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="33554527">
-                  <OperationType val="T"/>
+                  <OperationType val="P"/>
                   <Event>
                     <EventType val="N"/>
                   </Event>
-                  <TaskID comp="-1"/>
+                  <TaskID comp="-1" obj="67108900"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <RetainFocus val="N"/>
                   <Condition Exp="33554441"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </CallTask>
-              </LogicLine>
-              <LogicLine>
-                <CallTask FlowIsn="33554533">
-                  <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                  </Event>
-                  <TaskID comp="-1"/>
-                  <Lock val="N"/>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <RetainFocus val="N"/>
-                  <Condition Exp="33554439"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -601,16 +585,12 @@
             <ExpSyntax val="{0,33554438}"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="33554439">
-            <ExpSyntax val="{0,33554452} = 'admin' AND {0,33554453}= 'TRUE'LOG"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="33554440">
             <ExpSyntax val="{0,33554452} = 'sales' AND {0,33554453}"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="33554441">
-            <ExpSyntax val="{0,33554452} = 'purchaser' AND {0,33554453} = 'TRUE'LOG"/>
+            <ExpSyntax val="{0,33554452} = 'admin' AND {0,33554453} = 'TRUE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="67108875">
@@ -624,10 +604,6 @@
           <Expression id="67108879">
             <ExpSyntax val="{0,33554448}"/>
             <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="67108877">
-            <ExpSyntax val="'INGELOG' &amp; {32768,67108865} &amp; {32768,67108867} &amp; Str({32768,67108866},'')"/>
-            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="Login" FORCE_EXIT="N" id="33554433">

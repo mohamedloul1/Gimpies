@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="11"/>
+  <LastIsn val="13"/>
 
   <LastIsnFolder val="0"/>
 
@@ -561,7 +561,7 @@
 
   <Position val="D"/>
 
-  <PositionIndex val="-1"/>
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="3"/>
 
@@ -626,14 +626,10 @@
     <Column id="6" name="Quantity">
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
-        <Picture id="157" valUnicode="12"/>
         <StoredAs id="173" val="6"/>
         <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Quantity"/>
-        <_Dec id="181"/>
-        <_Whole id="182" val="12"/>
-        <_Negative id="192"/>
         <_Flip id="194"/>
         <_FieldPhysical Name="Quantity" PIC_U="12" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>

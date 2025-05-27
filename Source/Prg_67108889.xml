@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739391" _time="48664" date="20/05/2025" time="13:31:04"/>
+          <LastModified _date="739398" _time="36736" date="27/05/2025" time="10:12:16"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -111,6 +111,7 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <DATAVIEW_SRC FlowIsn="67108865" IDX="67108865" Type="M">
@@ -172,7 +173,7 @@
               <Y id="22" val="54"/>
               <Width id="23" val="569"/>
               <Height id="24" val="217"/>
-              <Wallpaper id="42" val="C:\Projects\Gimpies\img\SHOP.jpg"/>
+              <Wallpaper id="42" val="%WorkDir%img\SHOP.jpg"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Main"/>
               <WallpaperStyle id="448" val="4"/>

@@ -28,9 +28,9 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739397" _time="47816" date="26/05/2025" time="13:16:56"/>
+          <LastModified _date="739398" _time="40821" date="27/05/2025" time="11:20:21"/>
         </Header>
-        <ItemIsn val="23"/>
+        <ItemIsn val="27"/>
         <Resource>
           <DB id="67108866">
             <DataObject comp="-1" obj="2"/>
@@ -184,7 +184,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <DATAVIEW_SRC FlowIsn="67108873" IDX="67108865" Type="M">
+                <DATAVIEW_SRC FlowIsn="67108873" Type="M">
                   <Condition val="N"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -208,7 +208,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="1"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -221,7 +221,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
                   <Condition val="Y"/>
@@ -314,7 +314,7 @@
                   <INT_DIT_INFO>
                     <v>67108910</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="23"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -330,7 +330,7 @@
                   <INT_DIT_INFO>
                     <v>67108910</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -365,7 +365,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -414,10 +414,9 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>67108917</v>
                     <v>67108916</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -452,7 +451,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -488,10 +487,9 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>67108917</v>
                     <v>67108916</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="20"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -527,7 +525,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="24"/>
+                  <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -631,44 +629,20 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="53" _last_test_id="53" id="1">
+          <FormEntry _last_isn="54" _last_test_id="54" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
-              <X id="21"/>
-              <Y id="22" val="34"/>
+              <X id="21" val="42"/>
+              <Y id="22"/>
               <Width id="23" val="750"/>
-              <Height id="24" val="348"/>
+              <Height id="24" val="429"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="1"/>
               <FormName id="311" valUnicode="Stock Viewer"/>
             </PropertyList>
-            <Control _test_id="53" id="67108917">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Placement id="20" right="100"/>
-                <X id="21" val="285"/>
-                <Y id="22" val="12"/>
-                <Width id="23" val="250"/>
-                <Height id="24" val="16"/>
-                <Data Exp="67108883" id="43"/>
-                <Format id="82" valUnicode="50"/>
-                <Attribute id="83" val="85"/>
-                <TabOrder id="314" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="35" id="67108899">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="Stockroom"/>
-                <X id="21" val="645"/>
-                <Y id="22" val="12"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="19"/>
-                <Font id="50" val="7"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="40" id="67108904">
               <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
                 <X id="21" val="268"/>
-                <Y id="22" val="32"/>
+                <Y id="22" val="120"/>
                 <Width id="23" val="50"/>
                 <Height id="24" val="16"/>
                 <Data FieldID="67108883" id="43"/>
@@ -676,7 +650,7 @@
                 <ControlName id="46" val="Value_0001"/>
                 <SourceTable comp="-1" id="150" obj="5"/>
                 <DisplayList id="303" valUnicode="\"/>
-                <TabOrder id="314" val="2"/>
+                <TabOrder id="314" val="1"/>
                 <_DisplayField comp="-1" id="443" obj="2"/>
                 <_LinkField comp="-1" id="444" obj="2"/>
                 <_Index comp="-1" id="445" obj="1"/>
@@ -685,7 +659,7 @@
             <Control PDOD="128" _test_id="44" id="67108908">
               <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
                 <X id="21" val="323"/>
-                <Y id="22" val="32"/>
+                <Y id="22" val="120"/>
                 <Width id="23" val="58"/>
                 <Height id="24" val="17"/>
                 <Data FieldID="67108886" id="43"/>
@@ -693,7 +667,7 @@
                 <ControlName id="46" val="ColorFilter_0001"/>
                 <SourceTable comp="-1" id="150" obj="4"/>
                 <DisplayList id="303" valUnicode="\"/>
-                <TabOrder id="314" val="3"/>
+                <TabOrder id="314" val="2"/>
                 <_DisplayField comp="-1" id="443" obj="2"/>
                 <_LinkField comp="-1" id="444" obj="2"/>
                 <_Index comp="-1" id="445" obj="1"/>
@@ -701,8 +675,8 @@
             </Control>
             <Control PDOD="128" _test_id="41" id="67108905">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="586"/>
-                <Y id="22" val="32"/>
+                <X id="21" val="710"/>
+                <Y id="22" val="120"/>
                 <Width id="23" val="35"/>
                 <Height id="24" val="15"/>
                 <Format id="82" valUnicode="Search"/>
@@ -710,15 +684,15 @@
                   <EventType val="U"/>
                   <PublicObject comp="-1" obj="67108865"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="4"/>
+                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
             <Control _test_id="16" id="67108880">
               <PropertyList model="CTRL_RICH_CLIENT_TABLE">
                 <X id="21" val="2"/>
-                <Y id="22" val="51"/>
+                <Y id="22" val="139"/>
                 <Width id="23" val="743"/>
-                <Height id="24" val="278"/>
+                <Height id="24" val="290"/>
                 <LineDivider id="78" val="Y"/>
                 <_TitleHeight id="79" val="12"/>
                 <RowHeight id="80" val="69"/>
@@ -797,7 +771,7 @@
             </Control>
             <Control ISN_FATHER="67108880" PDOD="128" _test_id="36" id="67108900">
               <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="36"/>
+                <Width id="23" val="33"/>
                 <ControlLayer id="25" val="9"/>
                 <ColumnTitle id="139" valUnicode="Select"/>
               </PropertyList>
@@ -806,7 +780,7 @@
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="547"/>
-                <Y id="22" val="65"/>
+                <Y id="22" val="153"/>
                 <Width id="23" val="64"/>
                 <Height id="24" val="16"/>
                 <ControlLayer id="25" val="7"/>
@@ -815,7 +789,7 @@
                 <HorizontalAlignment id="65" val="2"/>
                 <Format id="82" valUnicode="20"/>
                 <Attribute id="83" val="78"/>
-                <TabOrder id="314" val="11"/>
+                <TabOrder id="314" val="10"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -827,7 +801,7 @@
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="6"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="105"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="1"/>
@@ -835,7 +809,7 @@
                 <ControlName id="46" val="Name"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="5"/>
+                <TabOrder id="314" val="4"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -848,7 +822,7 @@
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="116"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="145"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="2"/>
@@ -856,7 +830,7 @@
                 <ControlName id="46" val="Name_0001"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="6"/>
+                <TabOrder id="314" val="5"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -869,7 +843,7 @@
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="268"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="50"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="3"/>
@@ -878,7 +852,7 @@
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
                 <MultiLineEdit id="71"/>
-                <TabOrder id="314" val="7"/>
+                <TabOrder id="314" val="6"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -891,7 +865,7 @@
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="323"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="55"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="4"/>
@@ -899,7 +873,7 @@
                 <ControlName id="46" val="Name_0002"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="8"/>
+                <TabOrder id="314" val="7"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -909,7 +883,7 @@
               <PropertyList model="CTRL_RICH_CLIENT_IMAGE">
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="385"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="86"/>
                 <Height id="24" val="66"/>
                 <ControlLayer id="25" val="5"/>
@@ -917,7 +891,7 @@
                 <Style id="63" val="7"/>
                 <Attribute id="83" val="85"/>
                 <ImageStyle id="89" val="4"/>
-                <TabOrder id="314" val="9"/>
+                <TabOrder id="314" val="8"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="67108880" PDOD="17" _test_id="34" id="67108898">
@@ -927,7 +901,7 @@
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="475"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="67"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="6"/>
@@ -935,7 +909,7 @@
                 <ControlName id="46" val="Price"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="10"/>
+                <TabOrder id="314" val="9"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -947,7 +921,7 @@
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="613"/>
-                <Y id="22" val="66"/>
+                <Y id="22" val="154"/>
                 <Width id="23" val="62"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="8"/>
@@ -955,7 +929,7 @@
                 <ControlName id="46" val="Quantity"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="12"/>
+                <TabOrder id="314" val="11"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -964,7 +938,7 @@
               <PropertyList model="CTRL_RICH_CLIENT_CHECKBOX">
                 <Placement bottom="100" id="20" right="100"/>
                 <X id="21" val="685"/>
-                <Y id="22" val="65"/>
+                <Y id="22" val="153"/>
                 <Width id="23" val="18"/>
                 <Height id="24" val="16"/>
                 <ControlLayer id="25" val="9"/>
@@ -972,7 +946,7 @@
                 <Text id="45"/>
                 <ControlName id="46" val="Select Product"/>
                 <Style id="63" val="1"/>
-                <TabOrder id="314" val="13"/>
+                <TabOrder id="314" val="12"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -1023,7 +997,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="67108883">
-            <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\'&amp;Trim({0,67108875})&amp;'_'&amp;Trim({0,67108879})&amp;'.jpg'"/>
+            <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim({0,67108875})&amp;'_'&amp;Trim({0,67108879})&amp;'.jpg'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
