@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739398" _time="33297" date="27/05/2025" time="09:14:57"/>
+          <LastModified _date="739400" _time="82840" date="29/05/2025" time="23:00:40"/>
         </Header>
         <ItemIsn val="9"/>
         <Resource>
@@ -343,14 +343,14 @@
             <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="36"/>
               <Y id="22" val="57"/>
-              <Width id="23" val="761"/>
+              <Width id="23" val="870"/>
               <Height id="24" val="26"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="LogOut"/>
             </PropertyList>
             <Control _test_id="1" id="67108865">
               <PropertyList model="CTRL_RICH_CLIENT_IMAGE">
-                <X id="21" val="10"/>
+                <X id="21" val="26"/>
                 <Y id="22" val="2"/>
                 <Width id="23" val="30"/>
                 <Height id="24" val="20"/>
@@ -365,7 +365,7 @@
             <Control _test_id="11" id="67108875">
               <PropertyList model="CTRL_RICH_CLIENT_LABEL">
                 <Text Exp="67108874" id="19" valUnicode="Text"/>
-                <X id="21" val="45"/>
+                <X id="21" val="61"/>
                 <Y id="22" val="2"/>
                 <Width id="23" val="62"/>
                 <Height id="24" val="14"/>
@@ -375,7 +375,7 @@
             <Control _test_id="12" id="67108876">
               <PropertyList model="CTRL_RICH_CLIENT_LABEL">
                 <Text Exp="67108875" id="19" valUnicode="Text"/>
-                <X id="21" val="45"/>
+                <X id="21" val="61"/>
                 <Y id="22" val="16"/>
                 <Width id="23" val="62"/>
                 <Height id="24" val="6"/>
@@ -385,7 +385,7 @@
             </Control>
             <Control PDOD="128" _test_id="8" id="67108872">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="690"/>
+                <X id="21" val="787"/>
                 <Y id="22" val="2"/>
                 <Width id="23" val="66"/>
                 <Height id="24" val="20"/>

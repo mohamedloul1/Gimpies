@@ -19,8 +19,9 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="1"/>
+            <TSK_PARAMS val="2"/>
             <ParametersAttributes>
+              <Attr MgAttr="N"/>
               <Attr MgAttr="N"/>
             </ParametersAttributes>
           </ReturnValue>
@@ -31,9 +32,9 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739398" _time="39482" date="27/05/2025" time="10:58:02"/>
+          <LastModified _date="739401" _time="43613" date="30/05/2025" time="12:06:53"/>
         </Header>
-        <ItemIsn val="17"/>
+        <ItemIsn val="19"/>
         <Resource>
           <DB id="67108865">
             <DataObject comp="-1" obj="1"/>
@@ -51,6 +52,14 @@
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="10"/>
                 <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="67108869" name="CreatUser">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+                <DbColumnName id="178"/>
+                <Type id="179"/>
+                <UserType id="180"/>
               </PropertyList>
             </Column>
             <Column id="67108866" name="UserID">
@@ -93,7 +102,7 @@
           <InitialMode val="M"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
-          <VarRange LastIsn="14"/>
+          <VarRange LastIsn="16"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -165,6 +174,20 @@
                   <IsParameter val="N"/>
                   <_DitIndexForToolkit val="13"/>
                   <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108883" FlowIsn="67108944" id="67108883">
+                  <ASS val="67108893"/>
+                  <Column val="67108869"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
@@ -286,6 +309,27 @@
                   <Direction val="C"/>
                 </Select>
               </LogicLine>
+              <LogicLine>
+                <LNK Direction="D" EVL_CND="R" FlowIsn="67108941" Key="1" Mode="R" SortType="67108942" VIEW="11" VIEWS="1">
+                  <DB comp="-1" obj="1"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="67108882" FlowIsn="67108943" id="67108882">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="67108942"/>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="67108872" propagate="78">
@@ -348,6 +392,7 @@
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
+                      <Expression val="67108894"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -514,7 +559,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="41" _last_test_id="41" id="1">
+          <FormEntry _last_isn="47" _last_test_id="47" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="28"/>
               <Y id="22" val="38"/>
@@ -870,13 +915,13 @@
             <ExpSyntax val="{0,67108868} &lt;> 'admin'"/>
             <ExpAttribute val="B"/>
           </Expression>
-          <Expression id="67108891">
-            <ExpSyntax val="{0,67108866}"/>
-            <ExpAttribute val="A"/>
+          <Expression id="67108893">
+            <ExpSyntax val="{0,67108882}"/>
+            <ExpAttribute val="N"/>
           </Expression>
-          <Expression id="67108892">
-            <ExpSyntax val="???"/>
-            <ExpAttribute val="A"/>
+          <Expression id="67108894">
+            <ExpSyntax val="{0,67108883} + 1"/>
+            <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
         <EVNT DESC="refresh" FORCE_EXIT="N" id="67108865">
@@ -924,7 +969,7 @@
             <External val="N"/>
             <FormType val="M"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739398" _time="39482" date="27/05/2025" time="10:58:02"/>
+            <LastModified _date="739401" _time="43613" date="30/05/2025" time="12:06:53"/>
           </Header>
           <ItemIsn val="17"/>
           <Resource>
@@ -937,7 +982,7 @@
               <IdentifyRowModifications val="84"/>
             </DB>
             <Columns>
-              <Column id="67108865" name="P.EmployeeID">
+              <Column id="67108865" name="P.CreatUser">
                 <PropertyList model="FIELD">
                   <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
                   <DbColumnName id="178"/>
@@ -1229,8 +1274,8 @@
                   <END_BLK FlowIsn="67108891"/>
                 </LogicLine>
                 <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="67108959" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Username exist!" TitleTxt="Warning" VR_DISP="B">
-                    <AppendToErrorLog val="N"/>
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="67108959" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Username exist!" TitleTxt="Error" VR_DISP="B">
+                    <AppendToErrorLog val="Y"/>
                     <Condition Exp="67108883"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
@@ -1374,7 +1419,7 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="19" _last_test_id="19" id="1">
+            <FormEntry _last_isn="21" _last_test_id="21" id="1">
               <PropertyList model="FORM_RICH_CLIENT">
                 <X id="21" val="282"/>
                 <Y id="22" val="66"/>

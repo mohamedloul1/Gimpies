@@ -4,7 +4,7 @@
   <Header>
     <Version val="14081.00"/>
     <WithIsn val="Y"/>
-    <LastIsn val="3"/>
+    <LastIsn val="4"/>
     <LastIsnFolder val="1"/>
   </Header>
 
@@ -36,6 +36,13 @@
           <_Whole id="182" val="12"/>
           <_Negative id="192"/>
           <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="67108868" name="GUI Print Form">
+        <PropertyList model="FORM_GUI1">
+          <Width id="23" val="80"/>
+          <_Comment id="218"/>
+          <FormName id="311"/>
         </PropertyList>
       </Object>
     </Models>

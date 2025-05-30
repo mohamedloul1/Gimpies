@@ -28,9 +28,9 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739398" _time="40821" date="27/05/2025" time="11:20:21"/>
+          <LastModified _date="739401" _time="48296" date="30/05/2025" time="13:24:56"/>
         </Header>
-        <ItemIsn val="27"/>
+        <ItemIsn val="30"/>
         <Resource>
           <DB id="67108866">
             <DataObject comp="-1" obj="2"/>
@@ -81,6 +81,12 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
+            <Column id="67108868" name="Filter">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
             <Column id="67108867" name="PriceFilter">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_NUMERIC" id="1"/>
@@ -191,6 +197,22 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="67108892" FlowIsn="67109050" id="67108892">
+                  <ASS val="67108886"/>
+                  <Column val="67108868"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <INT_DIT_INFO>
+                    <v>67108934</v>
+                  </INT_DIT_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="67108887" FlowIsn="67109012" id="67108887">
                   <Column val="67108867"/>
                   <Type val="V"/>
@@ -208,7 +230,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="1"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -221,7 +243,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="2"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="N"/>
                   <Condition val="Y"/>
@@ -314,7 +336,7 @@
                   <INT_DIT_INFO>
                     <v>67108910</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="21"/>
+                  <_DitIndexForToolkit val="24"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -330,7 +352,7 @@
                   <INT_DIT_INFO>
                     <v>67108910</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="20"/>
+                  <_DitIndexForToolkit val="23"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -338,7 +360,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="67108881" Key="1" Mode="R" SortType="67108882" VIEW="11" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108881" Key="1" Mode="R" SortType="67108882" VIEW="12" VIEWS="2">
                   <DB comp="-1" obj="2"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -365,7 +387,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="15"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -376,7 +398,7 @@
                 <END_LINK FlowIsn="67108882"/>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="67108886" Key="1" Mode="R" SortType="67108887" VIEW="13" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108886" Key="1" Mode="R" SortType="67108887" VIEW="14" VIEWS="3">
                   <DB comp="-1" obj="3"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -416,7 +438,7 @@
                   <INT_DIT_INFO>
                     <v>67108916</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="16"/>
+                  <_DitIndexForToolkit val="19"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -427,7 +449,7 @@
                 <END_LINK FlowIsn="67108887"/>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="67108890" Key="1" Mode="R" SortType="67108891" VIEW="16" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108890" Key="1" Mode="R" SortType="67108891" VIEW="17" VIEWS="2">
                   <DB comp="-1" obj="5"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -451,7 +473,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -462,7 +484,7 @@
                 <END_LINK FlowIsn="67108891"/>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="67108895" Key="1" Mode="R" SortType="67108896" VIEW="18" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108895" Key="1" Mode="R" SortType="67108896" VIEW="19" VIEWS="2">
                   <DB comp="-1" obj="4"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -489,7 +511,7 @@
                   <INT_DIT_INFO>
                     <v>67108916</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="21"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -500,7 +522,7 @@
                 <END_LINK FlowIsn="67108896"/>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="67108902" Key="67108865" Mode="W" SortType="67108903" VIEW="20" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="67108902" Key="67108865" Mode="W" SortType="67108903" VIEW="21" VIEWS="2">
                   <DB comp="-1" obj="67108875"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -525,7 +547,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -600,49 +622,115 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="67108869" propagate="78">
-            <Level val="H"/>
-            <Type val="U"/>
+          <LogicUnit id="67108871" propagate="78">
+            <Level val="V"/>
+            <Type val="C"/>
+            <FieldID val="67108886"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
             <Condition val="89"/>
             <Event>
-              <EventType val="U"/>
-              <PublicObject comp="-1" obj="67108865"/>
+              <EventType val="S"/>
             </Event>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <RaiseEvent FlowIsn="67108975">
+                <RaiseEvent FlowIsn="67109092">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="295"/>
                   </Event>
                   <Wait val="78"/>
                   <Condition val="Y"/>
-                  <Modifier val="B"/>
+                  <Modifier val="S"/>
                   <Direction val="C"/>
                 </RaiseEvent>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="67108872" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="302"/>
+            </Event>
+            <TXT val="Filter_Img"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="67109093">
+                  <FieldID val="67108886"/>
+                  <WithValue val="67108889"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="67109094">
+                  <FieldID val="67108883"/>
+                  <WithValue val="67108889"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="54" _last_test_id="54" id="1">
+          <FormEntry _last_isn="70" _last_test_id="70" id="1">
             <PropertyList model="FORM_RICH_CLIENT">
-              <X id="21" val="42"/>
-              <Y id="22"/>
-              <Width id="23" val="750"/>
-              <Height id="24" val="429"/>
+              <X id="21" val="1"/>
+              <Y id="22" val="55"/>
+              <Width id="23" val="870"/>
+              <Height id="24" val="343"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="1"/>
               <FormName id="311" valUnicode="Stock Viewer"/>
             </PropertyList>
+            <Control _test_id="70" id="67108934">
+              <PropertyList model="CTRL_RICH_CLIENT_IMAGE">
+                <X id="21" val="830"/>
+                <Y id="22" val="31"/>
+                <Width id="23" val="22"/>
+                <Height id="24" val="16"/>
+                <Data Exp="67108891" id="43"/>
+                <ControlName id="46" val="Filter_Img"/>
+                <Attribute id="83" val="85"/>
+                <StudioImageFile id="88"/>
+                <ImageStyle id="89" val="4"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="55" id="67108919">
+              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+                <X id="21" val="787"/>
+                <Y id="22" val="5"/>
+                <Width id="23" val="66"/>
+                <Height id="24" val="16"/>
+                <Color id="51" val="7"/>
+                <Visible Exp="67108884" id="61"/>
+                <Format id="82" valUnicode="Add new shoe"/>
+                <ImageListFileName id="88" val="C:\Projects\Gimpies\img\greendonker.png"/>
+                <ButtonStyle id="96" val="2"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="40" id="67108904">
               <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
-                <X id="21" val="268"/>
-                <Y id="22" val="120"/>
+                <X id="21" val="282"/>
+                <Y id="22" val="32"/>
                 <Width id="23" val="50"/>
                 <Height id="24" val="16"/>
                 <Data FieldID="67108883" id="43"/>
@@ -650,7 +738,7 @@
                 <ControlName id="46" val="Value_0001"/>
                 <SourceTable comp="-1" id="150" obj="5"/>
                 <DisplayList id="303" valUnicode="\"/>
-                <TabOrder id="314" val="1"/>
+                <TabOrder id="314" val="3"/>
                 <_DisplayField comp="-1" id="443" obj="2"/>
                 <_LinkField comp="-1" id="444" obj="2"/>
                 <_Index comp="-1" id="445" obj="1"/>
@@ -658,8 +746,8 @@
             </Control>
             <Control PDOD="128" _test_id="44" id="67108908">
               <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
-                <X id="21" val="323"/>
-                <Y id="22" val="120"/>
+                <X id="21" val="337"/>
+                <Y id="22" val="32"/>
                 <Width id="23" val="58"/>
                 <Height id="24" val="17"/>
                 <Data FieldID="67108886" id="43"/>
@@ -667,38 +755,24 @@
                 <ControlName id="46" val="ColorFilter_0001"/>
                 <SourceTable comp="-1" id="150" obj="4"/>
                 <DisplayList id="303" valUnicode="\"/>
-                <TabOrder id="314" val="2"/>
+                <TabOrder id="314" val="4"/>
                 <_DisplayField comp="-1" id="443" obj="2"/>
                 <_LinkField comp="-1" id="444" obj="2"/>
                 <_Index comp="-1" id="445" obj="1"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="41" id="67108905">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="710"/>
-                <Y id="22" val="120"/>
-                <Width id="23" val="35"/>
-                <Height id="24" val="15"/>
-                <Format id="82" valUnicode="Search"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="67108865"/>
-                </RaiseEvent>
-                <TabOrder id="314" val="3"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="16" id="67108880">
               <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                <X id="21" val="2"/>
-                <Y id="22" val="139"/>
-                <Width id="23" val="743"/>
+                <X id="21" val="18"/>
+                <Y id="22" val="51"/>
+                <Width id="23" val="835"/>
                 <Height id="24" val="290"/>
                 <LineDivider id="78" val="Y"/>
                 <_TitleHeight id="79" val="12"/>
                 <RowHeight id="80" val="69"/>
-                <Elements id="81" val="9"/>
+                <Elements id="81" val="11"/>
                 <ColumnDivider id="189"/>
-                <_WindowWidth id="241" val="743"/>
+                <_WindowWidth id="241" val="835"/>
                 <RowHighlightColor id="410" val="4"/>
                 <TitleColor id="677" val="4"/>
                 <DividerColor id="685" val="4"/>
@@ -763,7 +837,7 @@
             </Control>
             <Control ISN_FATHER="67108880" PDOD="128" _test_id="31" id="67108895">
               <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="69"/>
+                <Width id="23" val="70"/>
                 <ControlLayer id="25" val="8"/>
                 <HorizontalAlignment id="65" val="2"/>
                 <ColumnTitle id="139" valUnicode="Quantity"/>
@@ -773,14 +847,33 @@
               <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
                 <Width id="23" val="33"/>
                 <ControlLayer id="25" val="9"/>
+                <Visible Exp="67108885" id="61"/>
                 <ColumnTitle id="139" valUnicode="Select"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="57" id="67108921">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="54"/>
+                <ControlLayer id="25" val="10"/>
+                <Visible Exp="67108884" id="61"/>
+                <HorizontalAlignment id="65" val="2"/>
+                <ColumnTitle id="139" valUnicode="Update"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="58" id="67108922">
+              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                <Width id="23" val="54"/>
+                <ControlLayer id="25" val="11"/>
+                <Visible Exp="67108884" id="61"/>
+                <HorizontalAlignment id="65" val="2"/>
+                <ColumnTitle id="139" valUnicode="Delete"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="67108880" PDOD="1" _test_id="46" id="67108910">
               <PropertyList model="CTRL_RICH_CLIENT_EDIT">
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="547"/>
-                <Y id="22" val="153"/>
+                <X id="21" val="563"/>
+                <Y id="22" val="65"/>
                 <Width id="23" val="64"/>
                 <Height id="24" val="16"/>
                 <ControlLayer id="25" val="7"/>
@@ -789,7 +882,7 @@
                 <HorizontalAlignment id="65" val="2"/>
                 <Format id="82" valUnicode="20"/>
                 <Attribute id="83" val="78"/>
-                <TabOrder id="314" val="10"/>
+                <TabOrder id="314" val="11"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -800,8 +893,8 @@
                   <Var FieldID="67108873"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="6"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="22"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="105"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="1"/>
@@ -809,7 +902,7 @@
                 <ControlName id="46" val="Name"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="4"/>
+                <TabOrder id="314" val="5"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -821,8 +914,8 @@
                   <Var FieldID="67108875"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="116"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="132"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="145"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="2"/>
@@ -830,7 +923,7 @@
                 <ControlName id="46" val="Name_0001"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="5"/>
+                <TabOrder id="314" val="6"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -842,8 +935,8 @@
                   <Var FieldID="67108877"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="268"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="284"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="50"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="3"/>
@@ -852,7 +945,7 @@
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
                 <MultiLineEdit id="71"/>
-                <TabOrder id="314" val="6"/>
+                <TabOrder id="314" val="7"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -864,8 +957,8 @@
                   <Var FieldID="67108879"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="323"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="339"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="55"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="4"/>
@@ -873,7 +966,7 @@
                 <ControlName id="46" val="Name_0002"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="7"/>
+                <TabOrder id="314" val="8"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
@@ -882,8 +975,8 @@
             <Control ISN_FATHER="67108880" _test_id="52" id="67108916">
               <PropertyList model="CTRL_RICH_CLIENT_IMAGE">
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="385"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="401"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="86"/>
                 <Height id="24" val="66"/>
                 <ControlLayer id="25" val="5"/>
@@ -891,7 +984,7 @@
                 <Style id="63" val="7"/>
                 <Attribute id="83" val="85"/>
                 <ImageStyle id="89" val="4"/>
-                <TabOrder id="314" val="8"/>
+                <TabOrder id="314" val="9"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="67108880" PDOD="17" _test_id="34" id="67108898">
@@ -900,8 +993,8 @@
                   <Var FieldID="67108871"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="475"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="491"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="67"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="6"/>
@@ -909,7 +1002,7 @@
                 <ControlName id="46" val="Price"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="9"/>
+                <TabOrder id="314" val="10"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -920,8 +1013,8 @@
                   <Var FieldID="67108870"/>
                 </Model>
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="613"/>
-                <Y id="22" val="154"/>
+                <X id="21" val="629"/>
+                <Y id="22" val="66"/>
                 <Width id="23" val="62"/>
                 <Height id="24" val="12"/>
                 <ControlLayer id="25" val="8"/>
@@ -929,7 +1022,7 @@
                 <ControlName id="46" val="Quantity"/>
                 <_Style id="63" val="1"/>
                 <HorizontalAlignment id="65" val="2"/>
-                <TabOrder id="314" val="11"/>
+                <TabOrder id="314" val="12"/>
                 <Border id="452"/>
                 <CornerRadius id="668"/>
               </PropertyList>
@@ -937,8 +1030,8 @@
             <Control ISN_FATHER="67108880" PDOD="192" _test_id="37" id="67108901">
               <PropertyList model="CTRL_RICH_CLIENT_CHECKBOX">
                 <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="685"/>
-                <Y id="22" val="153"/>
+                <X id="21" val="702"/>
+                <Y id="22" val="65"/>
                 <Width id="23" val="18"/>
                 <Height id="24" val="16"/>
                 <ControlLayer id="25" val="9"/>
@@ -946,7 +1039,41 @@
                 <Text id="45"/>
                 <ControlName id="46" val="Select Product"/>
                 <Style id="63" val="1"/>
-                <TabOrder id="314" val="12"/>
+                <TabOrder id="314" val="13"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="60" id="67108924">
+              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+                <Placement bottom="100" id="20" right="100"/>
+                <X id="21" val="796"/>
+                <Y id="22" val="65"/>
+                <Width id="23" val="35"/>
+                <Height id="24" val="16"/>
+                <ControlLayer id="25" val="11"/>
+                <Color id="51" val="7"/>
+                <Visible id="61"/>
+                <Format id="82" valUnicode="Delete"/>
+                <ImageListFileName id="88" val="C:\Projects\Gimpies\img\red.jpg"/>
+                <ButtonStyle id="96" val="2"/>
+                <TabOrder id="314" val="15"/>
+                <CornerRadius id="668"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="67108880" PDOD="128" _test_id="56" id="67108920">
+              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+                <Placement bottom="100" id="20" right="100"/>
+                <X id="21" val="740"/>
+                <Y id="22" val="66"/>
+                <Width id="23" val="35"/>
+                <Height id="24" val="16"/>
+                <ControlLayer id="25" val="10"/>
+                <Color id="51" val="7"/>
+                <Visible Exp="67108884" id="61"/>
+                <Format id="82" valUnicode="Update"/>
+                <ImageListFileName id="88" val="C:\Projects\Gimpies\img\blue.png"/>
+                <ButtonStyle id="96" val="2"/>
+                <TabOrder id="314" val="14"/>
+                <CornerRadius id="668"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -1000,8 +1127,33 @@
             <ExpSyntax val="Translate('%WorkingDir%')&amp;'img\' &amp; Trim({0,67108875})&amp;'_'&amp;Trim({0,67108879})&amp;'.jpg'"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="67108884">
+            <ExpSyntax val="{32768,67108867} = 'admin'"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108885">
+            <ExpSyntax val="{32768,67108867} = 'sales' OR {32768,67108867}= 'purchasing'"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108886">
+            <ExpSyntax val="IF({0,67108883}&lt;>'' OR  {0,67108886} &lt;>'', 'TRUE'LOG, 'FALSE'LOG)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108889">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="67108891">
+            <ExpSyntax val="IF({0,67108892} , Translate('%WorkingDir%')&amp;'img\' &amp; 'filter_off.png',Translate('%WorkingDir%')&amp;'img\' &amp; 'filter_on.png')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <EVNT DESC="FilterButten" FORCE_EXIT="N" id="67108865">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="ClearFilter_Butten" FORCE_EXIT="N" id="67108866">
           <Event>
             <EventType val="N"/>
           </Event>
