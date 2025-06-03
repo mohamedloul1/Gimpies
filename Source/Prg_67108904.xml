@@ -25,12 +25,13 @@
             </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
-          <TaskType val="O"/>
+          <TaskType val="C"/>
+          <Interactive val="Y"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739400" _time="57129" date="29/05/2025" time="15:52:09"/>
+          <LastModified _date="739401" _time="56527" date="30/05/2025" time="15:42:07"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -38,7 +39,10 @@
             <Column id="67108865" name="P.PDF">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="255"/>
                 <StoredAs id="173" val="1"/>
+                <Size id="174" val="255"/>
+                <_Flip id="194"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -82,8 +86,8 @@
             <AllowRange val="Y"/>
             <AllowIndexChange val="Y"/>
             <AllowSorting val="Y"/>
-            <AllowIOFiles val="Y"/>
-            <RecordCycle val="Y"/>
+            <AllowIOFiles val="N"/>
+            <TabbingCycle val="R"/>
             <AllowEvents val="Y"/>
             <AllowIndexOptimization val="Y"/>
             <AllowLocationInQuery val="Y"/>
@@ -111,6 +115,7 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <DATAVIEW_SRC FlowIsn="67108865" Type="M">
@@ -126,7 +131,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
                   <INT_DIT_INFO>
-                    <v>67108866</v>
+                    <v>67108865</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -138,15 +143,15 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="2" _last_test_id="2" id="1">
-            <PropertyList model="FORM_GUI0">
+          <FormEntry _last_isn="1" _last_test_id="1" id="1">
+            <PropertyList model="FORM_RICH_CLIENT">
               <Width id="23" val="594"/>
               <Height id="24" val="362"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Display PDF"/>
             </PropertyList>
-            <Control _test_id="2" id="67108866">
-              <PropertyList model="CTRL_GUI0_BROWSER">
+            <Control _test_id="1" id="67108865">
+              <PropertyList model="CTRL_RICH_CLIENT_BROWSER">
                 <X id="21" val="61"/>
                 <Y id="22" val="50"/>
                 <Width id="23" val="398"/>

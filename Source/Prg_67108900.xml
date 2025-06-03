@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739398" _time="34513" date="27/05/2025" time="09:35:13"/>
+          <LastModified _date="739404" _time="50407" date="02/06/2025" time="14:00:07"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -243,7 +243,7 @@
             <PropertyList model="FORM_RICH_CLIENT">
               <X id="21" val="90"/>
               <Y id="22" val="17"/>
-              <Width id="23" val="979"/>
+              <Width id="23" val="1109"/>
               <Height id="24" val="702"/>
               <FormUnits id="33" val="4"/>
               <VerticalFactor id="34" val="1"/>
@@ -257,7 +257,7 @@
               <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
                 <X id="21" val="1"/>
                 <Y id="22" val="1"/>
-                <Width id="23" val="959"/>
+                <Width id="23" val="1086"/>
                 <Height id="24" val="57"/>
                 <ControlName id="46" val="LogOut"/>
                 <TaskNumber comp="-1" id="183" obj="67108891"/>
@@ -266,8 +266,8 @@
             </Control>
             <Control PDOD="128" _test_id="3" id="67108867">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="749"/>
-                <Y id="22" val="65"/>
+                <X id="21" val="989"/>
+                <Y id="22" val="64"/>
                 <Width id="23" val="85"/>
                 <Height id="24" val="26"/>
                 <Format id="82" valUnicode="Manage Users"/>
@@ -282,7 +282,7 @@
               <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
                 <X id="21" val="1"/>
                 <Y id="22" val="101"/>
-                <Width id="23" val="959"/>
+                <Width id="23" val="1086"/>
                 <Height id="24" val="607"/>
                 <ControlName id="46" val="Stock Viewer"/>
                 <TaskNumber comp="-1" id="183" obj="67108897"/>

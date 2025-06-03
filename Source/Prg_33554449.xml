@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739398" _time="35270" date="27/05/2025" time="09:47:50"/>
+          <LastModified _date="739402" _time="81676" date="31/05/2025" time="22:41:16"/>
         </Header>
         <ItemIsn val="22"/>
         <Resource>
@@ -391,6 +391,22 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
+                <CallTask FlowIsn="67109008">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="67108906"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition Exp="67108880"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
                 <BLOCK EndBlock="33554464" EndBlockSegment="33554464" FlowIsn="33554469" Type="E">
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -591,6 +607,10 @@
           </Expression>
           <Expression id="33554441">
             <ExpSyntax val="{0,33554452} = 'admin' AND {0,33554453} = 'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="67108880">
+            <ExpSyntax val="{0,33554452} = 'purchaser' AND {0,33554453} = 'TRUE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="67108875">
